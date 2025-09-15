@@ -1,0 +1,77 @@
+[
+  { "key": "mainTitle_en", "value": "Soviet Film:" },
+  { "key": "mainTitle_jp", "value": "JP TITLE JP TITLE:" },
+  {
+    "key": "mainSubtitle_en",
+    "value": "Establishing Connections Among Asia Through Viktor Tsoi's Work"
+  },
+  {
+    "key": "mainSubtitle_jp",
+    "value": "JP SUBTITLE JP SUBTITLE JP SUBTITLE JP SUBTITLE JP SUBTITLE JP SUBTITLE"
+  },
+  {
+    "key": "heroDescription_en",
+    "value": "Asia Week is a <span class=\"bold\">free</span>, community-centered event dedicated to examining cultures across Asia, conducted in English and Japanese. This year's program celebrates Viktor Tsoi's international legacy across cinema, music, and art. Join us!"
+  },
+  {
+    "key": "heroDescription_jp",
+    "value": "Asia Week is a <span class=\"bold\">free</span>, community-centered event dedicated to examining cultures across Asia, conducted in English and Japanese. This year's program celebrates Viktor Tsoi's international legacy across cinema, music, and art. Join us!"
+  },
+  { "key": "dateLine1_en", "value": "08" },
+  { "key": "dateLine1_jp", "value": "8日" },
+  { "key": "dateLine2_en", "value": "nov." },
+  { "key": "dateLine2_jp", "value": "11月" },
+  { "key": "dateLine3_en", "value": "1-6PM" },
+  { "key": "dateLine3_jp", "value": "1-6PM" },
+  { "key": "signUp_en", "value": "Sign Up" },
+  { "key": "signUp_jp", "value": "申し込む" },
+  { "key": "scheduleTitle_en", "value": "schedule" },
+  { "key": "scheduleTitle_jp", "value": "SCHEDULE JP" },
+  {
+    "key": "location_en",
+    "value": "Kyushu University, Ohashi Campus, Design Commons"
+  },
+  { "key": "location_jp", "value": "九州大学 大橋キャンパス デザインコモンズ" },
+  { "key": "activityTitle1_en", "value": "<span class=\"bold\">Welcome Remarks</span>" },
+  { "key": "activityTitle1_jp", "value": "<span class=\"bold\">Welcome Remarks</span>" },
+  {
+    "key": "activityTitle2_en",
+    "value": "<span class=\"bold\">Historical Context:</span> Viktor Tsoi's Lasting Influence Throughout Asia"
+  },
+  {
+    "key": "activityTitle2_jp",
+    "value": "<span class=\"bold\">Historical Context:</span> Viktor Tsoi's Lasting Influence Throughout Asia"
+  },
+  {
+    "key": "heloisaTitle_en",
+    "value": "Specially Appointed Assistant Professor"
+  },
+  {
+    "key": "heloisaTitle_jp",
+    "value": "Specially Appointed Assistant Professor"
+  },
+  {
+    "key": "activityTitle3_en",
+    "value": "<span class=\"bold\">Round Table Conversation:</span> Bringing Kino to Japan through Film: Connections and Motivations"
+  },
+  {
+    "key": "activityTitle3_jp",
+    "value": "<span class=\"bold\">Round Table Conversation:</span> Bringing Kino to Japan through Film: Connections and Motivations"
+  },
+  { "key": "moderator_en", "value": "Moderator:" },
+  { "key": "moderator_jp", "value": "Moderator:" },
+  { "key": "participants_en", "value": "Participants:" },
+  { "key": "participants_jp", "value": "Participants:" },
+  { "key": "Break_en", "value": "Break" },
+  { "key": "Break_jp", "value": "休み" },
+  { "key": "associateProfessor_en", "value": "Associate Professor" },
+  { "key": "associateProfessor_jp", "value": "Associate Professor" },
+  { "key": "activityTitle5_en", "value": "TBA" },
+  { "key": "activityTitle5_jp", "value": "TBA" },
+  { "key": "activityTitle6_en", "value": "Russian Underground Art and Music during Perestroika" },
+  { "key": "activityTitle6_jp", "value": "Russian Underground Art and Music during Perestroika" },
+  { "key": "professor_en", "value": "Professor" },
+  { "key": "professor_jp", "value": "Professor" },
+  { "key": "activityTitle7_en", "value": "Viktor Tsoi in South Korea" },
+  { "key": "activityTitle7_jp", "value": "Viktor Tsoi in South Korea" }
+]

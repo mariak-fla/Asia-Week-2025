@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="nav">
+      <div class="lang-toggle-wrapper" aria-label="Language toggle">
+        <div class="lang-toggle">
+          <input id="lang-toggle" type="checkbox" />
+          <label for="lang-toggle">
+            <div class="lang-slider"></div>
+            <div class="options">
+              <div aria-label="Japanese language">JP</div>
+              <div aria-label="English language">EN</div>
+            </div>
+          </label>
+        </div>
+      </div>
+
+      <hr />
+
+      <div class="hamburger">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="lucide lucide-menu-icon lucide-menu"
+        >
+          <path d="M4 5h16" />
+          <path d="M4 12h16" />
+          <path d="M4 19h16" />
+        </svg>
+
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="lucide lucide-x-icon lucide-x"
+        >
+          <path d="M18 6 6 18" />
+          <path d="m6 6 12 12" />
+        </svg>
+      </div>
+
+      <ul class="menu">
+        <a href="#hero"><li class="nav-link"><span class="thin">00_</span>Home</li></a>
+        <a href="#schedule"><li class="nav-link"><span class="thin">01_</span>Schedule</li></a>
+        <a href="#lecturers"><li class="nav-link"><span class="thin">02_</span>Lecturers</li></a>
+        <a href="#guests"><li class="nav-link"><span class="thin">03_</span>Guests</li></a>
+        <a href="#partners"><li class="nav-link"><span class="thin">04_</span>Partners</li></a>
+        <a href="#contact"><li class="nav-link"><span class="thin">05_</span>Contact</li></a>
+      </ul>
+    </div>
+
+
+    <script>
+      // mobile menu
+      const hamburger = document.querySelector(".hamburger");
+      const navMenu = document.querySelector(".menu");
+
+      hamburger.addEventListener("click", () => {
+        hamburger.classList.toggle("active");
+        navMenu.classList.toggle("active");
+      });
+
+      document.querySelectorAll(".nav-link").forEach((n) =>
+        n.addEventListener("click", () => {
+          hamburger.classList.remove("active");
+          navMenu.classList.remove("active");
+        })
+      );
+    </script>
+  </body>
+</html>
