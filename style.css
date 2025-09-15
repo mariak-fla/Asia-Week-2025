@@ -271,6 +271,7 @@ ul.menu a {
 
 main {
   height: 100vh;
+  height: 100dvh;
   width: 100vw;
   overflow-y: scroll;
   overflow-x: hidden;
@@ -285,6 +286,7 @@ main::-webkit-scrollbar {
 
 section {
   height: 100vh;
+  height: 100dvh;
   width: 100vw;
   scroll-snap-align: start;
   position: relative;
@@ -990,248 +992,6 @@ span.bold {
   }
 }
 
-/* Mesh Gradient BG Animation */
-@keyframes hero-gradient-animation {
-  0% {
-    --x-0: 0%;
-    --s-start-0: 0%;
-    --s-end-0: 67%;
-    --c-0: hsla(11, 100%, 50%, 1);
-    --y-0: 99%;
-    --s-start-1: 0%;
-    --s-end-1: 66%;
-    --y-1: 95%;
-    --x-1: 93%;
-    --c-1: hsla(236, 100%, 23%, 1);
-    --x-2: 46%;
-    --s-start-2: 0%;
-    --s-end-2: 81%;
-    --y-2: 94%;
-    --c-2: hsla(327, 100%, 50%, 1);
-    --s-start-3: 0%;
-    --s-end-3: 150%;
-    --c-3: hsla(206, 100%, 9%, 1);
-    --y-3: 8%;
-    --x-3: 89%;
-  }
-
-  100% {
-    --x-0: 19%;
-    --s-start-0: 3;
-    --s-end-0: 58;
-    --c-0: hsla(11, 100%, 50%, 1);
-    --y-0: 15%;
-    --s-start-1: 3;
-    --s-end-1: 58;
-    --y-1: 13%;
-    --x-1: 16%;
-    --c-1: hsla(236, 100%, 23%, 1);
-    --x-2: 56%;
-    --s-start-2: 3;
-    --s-end-2: 58;
-    --y-2: 43%;
-    --c-2: hsla(327, 100%, 50%, 1);
-    --s-start-3: 3;
-    --s-end-3: 58;
-    --c-3: hsla(206, 100%, 9%, 1);
-    --y-3: 97%;
-    --x-3: 72%;
-  }
-}
-
-@property --x-0 {
-  syntax: "<percentage>";
-  inherits: false;
-  initial-value: 0%;
-}
-
-@property --s-start-0 {
-  syntax: "<percentage>";
-  inherits: false;
-  initial-value: 0%;
-}
-
-@property --s-end-0 {
-  syntax: "<percentage>";
-  inherits: false;
-  initial-value: 67%;
-}
-
-@property --c-0 {
-  syntax: "<color>";
-  inherits: false;
-  initial-value: hsla(11, 100%, 50%, 1);
-}
-
-@property --y-0 {
-  syntax: "<percentage>";
-  inherits: false;
-  initial-value: 99%;
-}
-
-@property --s-start-1 {
-  syntax: "<percentage>";
-  inherits: false;
-  initial-value: 0%;
-}
-
-@property --s-end-1 {
-  syntax: "<percentage>";
-  inherits: false;
-  initial-value: 66%;
-}
-
-@property --y-1 {
-  syntax: "<percentage>";
-  inherits: false;
-  initial-value: 95%;
-}
-
-@property --x-1 {
-  syntax: "<percentage>";
-  inherits: false;
-  initial-value: 93%;
-}
-
-@property --c-1 {
-  syntax: "<color>";
-  inherits: false;
-  initial-value: hsla(236, 100%, 23%, 1);
-}
-
-@property --x-2 {
-  syntax: "<percentage>";
-  inherits: false;
-  initial-value: 46%;
-}
-
-@property --s-start-2 {
-  syntax: "<percentage>";
-  inherits: false;
-  initial-value: 0%;
-}
-
-@property --s-end-2 {
-  syntax: "<percentage>";
-  inherits: false;
-  initial-value: 81%;
-}
-
-@property --y-2 {
-  syntax: "<percentage>";
-  inherits: false;
-  initial-value: 94%;
-}
-
-@property --c-2 {
-  syntax: "<color>";
-  inherits: false;
-  initial-value: hsla(327, 100%, 50%, 1);
-}
-
-@property --s-start-3 {
-  syntax: "<percentage>";
-  inherits: false;
-  initial-value: 0%;
-}
-
-@property --s-end-3 {
-  syntax: "<percentage>";
-  inherits: false;
-  initial-value: 150%;
-}
-
-@property --c-3 {
-  syntax: "<color>";
-  inherits: false;
-  initial-value: hsla(206, 100%, 9%, 1);
-}
-
-@property --y-3 {
-  syntax: "<percentage>";
-  inherits: false;
-  initial-value: 8%;
-}
-
-@property --x-3 {
-  syntax: "<percentage>";
-  inherits: false;
-  initial-value: 89%;
-}
-
-#hero {
-  --x-0: 0%;
-  --c-0: #ff2f00;
-  --y-0: 99%;
-  --y-1: 95%;
-  --x-1: 93%;
-  --c-1: #000875;
-  --x-2: 46%;
-  --y-2: 94%;
-  --c-2: #ff008c;
-  --c-3: #001a2e;
-  --y-3: 8%;
-  --x-3: 89%;
-  background-color: rgb(8, 40, 66);
-  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 1111 1111' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E"),
-    radial-gradient(
-      circle at var(--x-0) var(--y-0),
-      var(--c-0) var(--s-start-0),
-      transparent var(--s-end-0)
-    ),
-    radial-gradient(
-      circle at var(--x-1) var(--y-1),
-      var(--c-1) var(--s-start-1),
-      transparent var(--s-end-1)
-    ),
-    radial-gradient(
-      circle at var(--x-2) var(--y-2),
-      var(--c-2) var(--s-start-2),
-      transparent var(--s-end-2)
-    ),
-    radial-gradient(
-      circle at var(--x-3) var(--y-3),
-      var(--c-3) var(--s-start-3),
-      transparent var(--s-end-3)
-    );
-  animation: hero-gradient-animation 5s linear infinite alternate-reverse;
-  background-blend-mode: overlay, normal, normal, normal, normal;
-}
-
-#schedule {
-  background: url("data:image/svg+xml,%3Csvg viewBox='0 0 1111 1111' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E"),
-    radial-gradient(
-      circle at -30% -19%,
-      var(--colors-gray-600) 0%,
-      hsla(220, 13%, 91%, 5%) 20%,
-      transparent 80%
-    ),
-    /* radial-gradient(
-      circle at 120% 49%,
-      hsla(11, 100%, 50%, 50%) 0%,
-      hsla(11, 100%, 50%, 50%) 5%,
-      hsla(236, 100%, 23%, 10%) 40%,
-      transparent 100%
-    ), */
-      linear-gradient(120deg, #111827 0%, var(--colors-gray-950) 80%);
-  /* radial-gradient(
-      circle at -20% -9%,
-      var(--c-2) 0%,
-      hsla(327, 100%, 50%, 50%) 30%,
-      transparent 80%
-    ),
-    radial-gradient(
-      circle at 120% 49%,
-      hsla(11, 100%, 50%, 50%) 0%,
-      hsla(11, 100%, 50%, 50%) 5%,
-      hsla(236, 100%, 23%, 10%) 40%,
-      transparent 100%
-    ),
-    linear-gradient(120deg, var(--c-1) 0%, var(--c-3) 80%); */
-  background-color: var(--colors-gray-950);
-  background-blend-mode: overlay, normal, normal, normal;
-}
-
 @keyframes bounce {
   0% {
     transform: translateY(-5%);
@@ -1256,192 +1016,151 @@ span.bold {
   }
 }
 
+/* faaaaaabulous gradient animations */
+@keyframes hero-gradient-animation {
+  0% {
+    --x-0: 0%;
+    --y-0: 99%;
+    --x-1: 93%;
+    --y-1: 95%;
+    --x-2: 46%;
+    --y-2: 94%;
+  }
+  100% {
+    --x-0: 19%;
+    --y-0: 15%;
+    --x-1: 16%;
+    --y-1: 13%;
+    --x-2: 56%;
+    --y-2: 43%;
+  }
+}
+
+@property --x-0 {
+  syntax: "<percentage>";
+  inherits: false;
+  initial-value: 0%;
+}
+@property --y-0 {
+  syntax: "<percentage>";
+  inherits: false;
+  initial-value: 99%;
+}
+@property --x-1 {
+  syntax: "<percentage>";
+  inherits: false;
+  initial-value: 93%;
+}
+@property --y-1 {
+  syntax: "<percentage>";
+  inherits: false;
+  initial-value: 95%;
+}
+@property --x-2 {
+  syntax: "<percentage>";
+  inherits: false;
+  initial-value: 46%;
+}
+@property --y-2 {
+  syntax: "<percentage>";
+  inherits: false;
+  initial-value: 94%;
+}
+
+#hero {
+  --c-0: hsla(11, 100%, 50%, .75);
+  --c-1: #000875;
+  --c-2: #ff008c;
+  --c-3: hsla(206, 100%, 9%, .02);
+
+  --s-start-0: 0%;
+  --s-end-0: 67%;
+  --s-start-1: 0%;
+  --s-end-1: 66%;
+  --s-start-2: 0%;
+  --s-end-2: 81%;
+  --s-start-3: 0%;
+  --s-end-3: 150%;
+
+  --x-0: 0%;
+  --y-0: 99%;
+  --x-1: 93%;
+  --y-1: 95%;
+  --x-2: 46%;
+  --y-2: 94%;
+  --x-3: 89%;
+  --y-3: 8%;
+
+  background-color: rgb(8, 40, 66);
+  background-image: 
+    url("/assets/bg-noise.svg"),
+     radial-gradient(
+      circle at var(--x-0) var(--y-0),
+      var(--c-0) var(--s-start-0),
+      transparent var(--s-end-0)
+    ),
+    radial-gradient(
+      circle at var(--x-1) var(--y-1),
+      var(--c-1) var(--s-start-1),
+      transparent var(--s-end-1)
+    ),
+    radial-gradient(
+      circle at var(--x-2) var(--y-2),
+      var(--c-2) var(--s-start-2),
+      transparent var(--s-end-2)
+    ),
+    radial-gradient(
+      circle at var(--x-3) var(--y-3),
+      var(--c-3) var(--s-start-3),
+      transparent var(--s-end-3)
+    );
+  background-repeat: repeat;
+  background-blend-mode: overlay, normal, normal, normal, normal;
+  animation: hero-gradient-animation 15s ease-in-out infinite alternate-reverse;
+  will-change: background-position, background;
+}
 
 @keyframes schedule-gradient-animation {
-    0% {
-        --sb-start-0: 9%;
-        --sb-end-0: 55%;
-        --yb-0: 80%;
-        --xb-0: 85%;
-        --cb-0: hsla(266.99999999999983, 1%, 12%, 1);
-        --sb-start-1: 5%;
-        --sb-end-1: 72%;
-        --cb-1: hsla(335.9999999999997, 2%, 22%, 1);
-        --xb-1: 60%;
-        --yb-1: 24%;
-        --yb-2: 82%;
-        --cb-2: hsla(53.999999999999886, 0%, 0%, 0.49);
-        --sb-start-2: 5%;
-        --sb-end-2: 52%;
-        --xb-2: 13%;
-        --sb-start-3: 13%;
-        --sb-end-3: 68%;
-        --xb-3: 24%;
-        --cb-3: hsla(299, 4%, 36%, 1);
-        --yb-3: 7%;
-    }
-
-    100% {
-        --sb-start-0: 9%;
-        --sb-end-0: 55%;
-        --yb-0: 94%;
-        --xb-0: 31%;
-        --cb-0: hsla(266.99999999999943, 0%, 12%, 1);
-        --sb-start-1: 5%;
-        --sb-end-1: 72%;
-        --cb-1: hsla(0, 4%, 19%, 1);
-        --xb-1: 2%;
-        --yb-1: 25%;
-        --yb-2: 20%;
-        --cb-2: hsla(54.000000000000036, 0%, 0%, 0.49);
-        --sb-start-2: 5%;
-        --sb-end-2: 52%;
-        --xb-2: 98%;
-        --sb-start-3: 13%;
-        --sb-end-3: 68%;
-        --xb-3: 95%;
-        --cb-3: hsla(298.99999999999994, 3%, 41%, 1);
-        --yb-3: 92%;
-    }
+  0% {
+    --xb-1: 60%; --yb-1: 24%;
+    --xb-3: 24%; --yb-3: 7%;
+  }
+  100% {
+    --xb-1: 2%; --yb-1: 25%;
+    --xb-3: 95%; --yb-3: 92%;
+  }
 }
 
-@property --sb-start-0 {
-    syntax: '<percentage>';
-    inherits: false;
-    initial-value: 9%
-}
-
-@property --sb-end-0 {
-    syntax: '<percentage>';
-    inherits: false;
-    initial-value: 55%
-}
-
-@property --yb-0 {
-    syntax: '<percentage>';
-    inherits: false;
-    initial-value: 80%
-}
-
-@property --xb-0 {
-    syntax: '<percentage>';
-    inherits: false;
-    initial-value: 85%
-}
-
-@property --cb-0 {
-    syntax: '<color>';
-    inherits: false;
-    initial-value: hsla(266.99999999999983, 1%, 12%, 1)
-}
-
-@property --sb-start-1 {
-    syntax: '<percentage>';
-    inherits: false;
-    initial-value: 5%
-}
-
-@property --sb-end-1 {
-    syntax: '<percentage>';
-    inherits: false;
-    initial-value: 72%
-}
-
-@property --cb-1 {
-    syntax: '<color>';
-    inherits: false;
-    initial-value: hsla(335.9999999999997, 2%, 22%, 1)
-}
-
-@property --xb-1 {
-    syntax: '<percentage>';
-    inherits: false;
-    initial-value: 60%
-}
-
-@property --yb-1 {
-    syntax: '<percentage>';
-    inherits: false;
-    initial-value: 24%
-}
-
-@property --yb-2 {
-    syntax: '<percentage>';
-    inherits: false;
-    initial-value: 82%
-}
-
-@property --cb-2 {
-    syntax: '<color>';
-    inherits: false;
-    initial-value: hsla(53.999999999999886, 0%, 0%, 0.49)
-}
-
-@property --sb-start-2 {
-    syntax: '<percentage>';
-    inherits: false;
-    initial-value: 5%
-}
-
-@property --sb-end-2 {
-    syntax: '<percentage>';
-    inherits: false;
-    initial-value: 52%
-}
-
-@property --xb-2 {
-    syntax: '<percentage>';
-    inherits: false;
-    initial-value: 13%
-}
-
-@property --sb-start-3 {
-    syntax: '<percentage>';
-    inherits: false;
-    initial-value: 13%
-}
-
-@property --sb-end-3 {
-    syntax: '<percentage>';
-    inherits: false;
-    initial-value: 68%
-}
-
-@property --xb-3 {
-    syntax: '<percentage>';
-    inherits: false;
-    initial-value: 24%
-}
-
-@property --cb-3 {
-    syntax: '<color>';
-    inherits: false;
-    initial-value: hsla(299, 4%, 36%, 1)
-}
-
-@property --yb-3 {
-    syntax: '<percentage>';
-    inherits: false;
-    initial-value: 7%
-}
+@property --xb-1 { syntax: "<percentage>"; inherits: false; initial-value: 60%; }
+@property --yb-1 { syntax: "<percentage>"; inherits: false; initial-value: 24%; }
+@property --xb-3 { syntax: "<percentage>"; inherits: false; initial-value: 24%; }
+@property --yb-3 { syntax: "<percentage>"; inherits: false; initial-value: 7%; }
 
 #schedule {
-    --yb-0: 80%;
-    --xb-0: 85%;
-    --cb-0: hsla(266.99999999999983, 1%, 12%, 1);
-    --cb-1: hsla(335.9999999999997, 2%, 22%, 1);
-    --xb-1: 60%;
-    --yb-1: 24%;
-    --yb-2: 82%;
-    --cb-2: hsla(53.999999999999886, 0%, 0%, 0.49);
-    --xb-2: 13%;
-    --xb-3: 24%;
-    --cb-3: hsla(299, 4%, 36%, 1);
-    --yb-3: 7%;
-    ;
-    background-color: hsla(0, 0%, 0%, 1);
-    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 01111 01111' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E"), radial-gradient(circle at var(--xb-0) var(--yb-0), var(--cb-0) var(--sb-start-0), transparent var(--sb-end-0)), radial-gradient(circle at var(--xb-1) var(--yb-1), var(--cb-1) var(--sb-start-1), transparent var(--sb-end-1)), radial-gradient(circle at var(--xb-2) var(--yb-2), var(--cb-2) var(--sb-start-2), transparent var(--sb-end-2)), radial-gradient(circle at var(--xb-3) var(--yb-3), var(--cb-3) var(--sb-start-3), transparent var(--sb-end-3));
-    animation: schedule-gradient-animation 10s linear infinite alternate;
-    background-blend-mode: overlay, normal, normal, normal, normal;
+  --cb-0: hsla(266,1%,12%,1);
+  --cb-1: hsla(335,2%,22%,1);
+  --cb-2: hsla(54,0%,0%,0.49);
+  --cb-3: hsla(299,4%,36%,1);
+
+  --sb-start-0: 9%; --sb-end-0: 55%;
+  --sb-start-1: 5%; --sb-end-1: 72%;
+  --sb-start-2: 5%; --sb-end-2: 52%;
+  --sb-start-3: 13%; --sb-end-3: 68%;
+
+  --xb-0: 85%; --yb-0: 80%;
+  --xb-1: 60%; --yb-1: 24%;
+  --xb-2: 13%; --yb-2: 82%;
+  --xb-3: 24%; --yb-3: 7%;
+
+  background-color: hsla(0,0%,0%,1);
+  background-image: 
+    url("/assets/bg-noise.svg"),
+    radial-gradient(circle at var(--xb-0) var(--yb-0), var(--cb-0) var(--sb-start-0), transparent var(--sb-end-0)),
+    radial-gradient(circle at var(--xb-1) var(--yb-1), var(--cb-1) var(--sb-start-1), transparent var(--sb-end-1)),
+    radial-gradient(circle at var(--xb-2) var(--yb-2), var(--cb-2) var(--sb-start-2), transparent var(--sb-end-2)),
+    radial-gradient(circle at var(--xb-3) var(--yb-3), var(--cb-3) var(--sb-start-3), transparent var(--sb-end-3));
+  background-repeat: repeat;
+  background-blend-mode: overlay, normal, normal, normal, normal;
+  animation: schedule-gradient-animation 20s ease-in-out infinite alternate;
+  will-change: background-position, background;
 }
-   
