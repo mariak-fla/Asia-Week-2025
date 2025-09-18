@@ -37,6 +37,13 @@ a {
   --colors-gray-700: #374151;
   --colors-gray-950: #030712;
 
+  --fs-cta: 1.6rem;
+  --fs-xl: 2.4rem;
+  --fs-lg: clamp(1.8rem, calc(1.1647rem + 1.765vw), 2.4rem);
+  --fs-md: clamp(1.5rem, calc(1.1824rem + 0.882vw), 1.8rem);
+  --fs-sm: 1.4rem;
+  --fs-xs: 1.3rem;
+
   --border-radius: 8px;
   --card-border-radius: 12px;
   --drawer-border-radius: 16px;
@@ -60,14 +67,14 @@ button {
 
 .btn {
   padding: 1.6rem 0;
-  font-size: 2.4rem;
+  font-size: var(--fs-lg);
   background-color: var(--colors-accent);
   color: var(--colors-gray-50);
   border-radius: var(--border-radius);
   padding: 1.2rem 0;
   text-align: center;
   cursor: pointer;
-  font-size: 1.6rem;
+  font-size: var(--fs-cta);
   font-weight: 700;
   border: 2px solid var(--colors-accent);
 
@@ -111,7 +118,7 @@ button {
 
 /* Language toggle component */
 .lang-toggle {
-  font-size: 1.4rem;
+  font-size: var(--fs-sm);
   line-height: 2.6rem;
   display: inline-block;
   border-radius: 4px;
@@ -265,13 +272,14 @@ ul.menu a {
 
 .footer svg {
   stroke: var(--colors-gray-400);
+  will-change: transform;
   animation: bounce 1.5s infinite;
   width: 2.4rem;
 }
 
 main {
-  height: 100vh;
-  height: 100dvh;
+  /* height: 100vh;
+  height: 100dvh; */
   width: 100vw;
   overflow-y: scroll;
   overflow-x: hidden;
@@ -285,7 +293,7 @@ main::-webkit-scrollbar {
 }
 
 section {
-  height: 100vh;
+  /* height: 100vh; */
   height: 100dvh;
   width: 100vw;
   scroll-snap-align: start;
@@ -439,8 +447,9 @@ a.btn.sign-up svg {
 
 .event-info-txt .title,
 .event-info-txt .subtitle,
-#scheduleTitle {
-  font-size: clamp(1.8rem, calc(1.1647rem + 1.765vw), 2.4rem);
+#scheduleTitle,
+#guestTitle {
+  font-size: var(--fs-lg);
 }
 
 .event-info-txt h1.title {
@@ -453,10 +462,11 @@ a.btn.sign-up svg {
 }
 
 .event-info-txt .description {
-  font-size: clamp(1.5rem, calc(1.1824rem + 0.882vw), 1.8rem);
+  font-size: var(--fs-md);
 }
 
-.timeline {
+.timeline,
+#guests {
   height: 100%;
   width: 100vw;
   align-items: center;
@@ -502,7 +512,7 @@ a.btn.sign-up svg {
 a.location {
   display: flex;
   font-size: 1.2rem;
-  color: var(--colors-gray-400);
+  color: var(--colors-gray-200);
   align-items: center;
   gap: 0.8rem;
   margin: 0.8rem 0 2rem;
@@ -519,7 +529,8 @@ a.location svg {
   transform: translateX(-50%);
 }
 
-.schedule-txt {
+.schedule-txt,
+.guest-txt {
   padding: 2.8rem 2rem 50vh;
   border-top: 1px solid var(--border-color);
   border-radius: var(--card-border-radius) var(--card-border-radius) 0 0;
@@ -527,7 +538,16 @@ a.location svg {
   background-color: var(--colors-card-bg);
   display: flex;
   flex-direction: column;
+}
+
+.schedule-txt {
   gap: 1rem;
+  padding: 2.8rem 2rem 50vh;
+}
+
+.guest-txt {
+  /* padding: 2.8rem 2rem 50vh; */
+  gap: 1.6rem;
 }
 
 .activity-wrapper {
@@ -545,7 +565,7 @@ a.location svg {
 
 .activity-time,
 .activity-title {
-  font-size: 1.5rem;
+  font-size: var(--fs-md);
 }
 
 .activity-title {
@@ -565,7 +585,7 @@ span.bold {
   font-size: 1.4rem;
 }
 
-.schedule-btn-wrapper {
+.slide-btn-wrapper {
   display: flex;
   justify-content: space-between;
   position: absolute;
@@ -604,7 +624,8 @@ span.bold {
   will-change: transform;
 }
 
-.carousel-slide {
+.carousel-slide,
+.guest-slide {
   min-width: 100vw;
   max-width: 100vw;
   flex-shrink: 0;
@@ -613,8 +634,67 @@ span.bold {
   align-items: center;
 }
 
-#Break {
+/* FIX THIS LATERR */
+/* #Break {
   color: var(--colors-gray-500);
+} */
+
+#guests {
+  gap: 5.2rem;
+}
+
+.guest-img-wrapper {
+  margin-left: calc(50% - 3rem);
+  transform: translateX(-50%);
+  position: relative;
+  /* overflow: visible; */
+  padding-top: 3rem;
+}
+
+.guest-img-wrapper img,
+.guest-decoration {
+  width: 100%;
+  border-radius: var(--card-border-radius);
+}
+
+.guest-card .title-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+h3.guest-name {
+  color: var(--colors-gray-50);
+  font-size: var(--fs-xl);
+}
+
+h4.guest-title {
+  font-size: var(--fs-lg);
+  color: var(--colors-accent);
+}
+
+p.guest-description {
+  font-size: var(--fs-md);
+  color: var(--colors-gray-200);
+}
+
+.guest-decoration {
+  border: 1px solid var(--border-color);
+  content: "";
+  position: absolute;
+  z-index: 1;
+  top: -3rem;
+  left: 3rem;
+  height: 100%;
+  pointer-events: none;
+}
+
+.guest-carousel {
+  position: relative;
+}
+
+.desktop-slide-btn-wrapper {
+  display: none;
 }
 
 /* Very Tiny Mobile */
@@ -640,17 +720,17 @@ span.bold {
 
   .event-info-txt .title,
   .event-info-txt .subtitle {
-    font-size: 1.7rem;
+    font-size: var(--fs-lg);
   }
 
   .event-info-txt .description {
-    font-size: 1.5rem;
+    font-size: var(--fs-md);
   }
 
   .activity-time,
   .activity-title,
   .timeslot h4 {
-    font-size: 1.4rem;
+    font-size: var(--fs-sm);
   }
 
   .slide-btn {
@@ -658,7 +738,7 @@ span.bold {
     height: 3rem;
   }
 
-  .schedule-btn-wrapper {
+  .slide-btn-wrapper {
     bottom: 63vh;
     width: 90vw;
     left: 5vw;
@@ -673,7 +753,7 @@ span.bold {
 }
 
 /* Tablet */
-@media screen and (min-width: 701px) {
+/* @media screen and (min-width: 701px) {
   .tsoi-hero {
     bottom: -15vh;
   }
@@ -722,16 +802,24 @@ span.bold {
 
   .event-info-txt .title,
   .event-info-txt .subtitle {
-    font-size: 2.8rem;
+    font-size: var(--fs-tablet-lg);
   }
 
   .event-info-txt .description {
-    font-size: 2.2rem;
+    font-size: var(--fs-tablet-md);
   }
-}
+} */
 
 /* Desktop */
 @media screen and (min-width: 1025px) {
+  :root {
+    --fs-cta: 1.6rem;
+    --fs-lg: 2.4rem;
+    --fs-md: 1.6rem;
+    --fs-sm: 1.4rem;
+    --fs-xs: 1.3rem;
+  }
+
   .nav,
   .footer {
     gap: 4rem;
@@ -896,19 +984,19 @@ span.bold {
     gap: 0.8rem;
   }
 
-  .event-info-txt .title,
+  /* .event-info-txt .title,
   .event-info-txt .subtitle {
-    font-size: 2.4rem;
+    font-size: var(--fs-lg);
   }
 
   .event-info-txt .description,
   a.btn.sign-up {
-    font-size: 1.6rem;
+    font-size: var(--fs-md);
   }
 
   a.btn.sign-up {
-    font-size: 1.6rem;
-  }
+    font-size: var(--fs-md);
+  } */
 
   .timeline {
     height: 100vh;
@@ -917,18 +1005,19 @@ span.bold {
   }
 
   .timeslot h4 {
-    font-size: 1.4rem;
+    font-size: var(--fs-sm);
     margin-bottom: 3.2rem;
   }
 
   .timeslot h4:nth-child(1)::before {
-    width: 60rem;
+    width: 80rem;
+    max-width: 70vw;
     left: 50%;
-    height: 0.15rem;
+    height: 2px;
     transform: translateX(-50%);
   }
 
-  .schedule-btn-wrapper {
+  .slide-btn-wrapper {
     display: none;
   }
 
@@ -941,7 +1030,8 @@ span.bold {
 
   .schedule-card img,
   .schedule-txt {
-    width: 32rem;
+    width: 35rem;
+    max-width: 28vw;
   }
 
   .schedule-card {
@@ -977,7 +1067,7 @@ span.bold {
   .activity-time,
   .activity-title,
   .timeslot h4 {
-    font-size: 1.4rem;
+    font-size: var(--fs-sm);
   }
 
   .activity-description {
@@ -989,6 +1079,106 @@ span.bold {
     border-radius: var(--card-border-radius);
     height: 100%;
     justify-content: center;
+  }
+
+  #guests {
+    padding-top: 12rem;
+    gap: 8rem;
+    height: 100vh;
+    align-content: flex-end;
+  }
+
+  .guest-img-wrapper {
+    margin-left: 0;
+    transform: none;
+    position: relative;
+    padding-top: 0;
+  }
+
+  .guest-img-wrapper img,
+  .guest-decoration {
+    max-width: 40vw;
+    width: 35rem;
+    border-radius: 2rem;
+    object-fit: cover;
+  }
+
+  .guest-carousel .slide-btn-wrapper,
+  .guest-txt {
+    max-width: 40vw;
+  }
+
+  .guest-card {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    gap: min(8rem, 2.5vw);
+    align-items: flex-end;
+  }
+
+  .guest-txt {
+    /* align-content: flex-end; */
+    height: fit-content;
+    padding: 2.8rem 2rem;
+    border-radius: var(--card-border-radius);
+  }
+
+  .guest-card .title-wrapper {
+    display: flex;
+    /* flex-direction: column; */
+    gap: 0.4rem;
+  }
+
+  h3.guest-name {
+    color: var(--colors-gray-50);
+    font-size: var(--fs-xl);
+  }
+
+  h4.guest-title {
+    font-size: var(--fs-lg);
+    color: var(--colors-accent);
+  }
+
+  p.guest-description {
+    font-size: var(--fs-sm);
+    color: var(--colors-gray-200);
+  }
+
+  /* .guest-decoration {
+    border: 1px solid var(--border-color);
+    content: "";
+    position: absolute;
+    z-index: 1;
+    top: -3rem;
+    left: 3rem;
+    height: 100%;
+    pointer-events: none;
+  } */
+
+  .guest-carousel {
+    position: relative;
+    max-width: 75vw;
+  }
+
+  .guest-slide {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    justify-content: center;
+  }
+
+  .guest-carousel .slide-btn-wrapper {
+    display: none;
+    /* margin-left: 15vw; */
+  }
+
+  .desktop-slide-btn-wrapper {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+
+    position: relative;
+    z-index: 10;
   }
 }
 
@@ -1007,6 +1197,7 @@ span.bold {
 
 .rotate {
   transform-origin: 50% 50%;
+  will-change: transform;
   animation: spin 20s linear infinite;
 }
 
@@ -1068,10 +1259,10 @@ span.bold {
 }
 
 #hero {
-  --c-0: hsla(11, 100%, 50%, .75);
+  --c-0: hsla(11, 100%, 50%, 0.75);
   --c-1: #000875;
   --c-2: #ff008c;
-  --c-3: hsla(206, 100%, 9%, .02);
+  --c-3: hsla(206, 100%, 9%, 0.02);
 
   --s-start-0: 0%;
   --s-end-0: 67%;
@@ -1092,9 +1283,8 @@ span.bold {
   --y-3: 8%;
 
   background-color: rgb(8, 40, 66);
-  background-image: 
-    url("/assets/bg-noise.svg"),
-     radial-gradient(
+  background-image: url("/assets/bg-noise.svg"),
+    radial-gradient(
       circle at var(--x-0) var(--y-0),
       var(--c-0) var(--s-start-0),
       transparent var(--s-end-0)
@@ -1116,51 +1306,59 @@ span.bold {
     );
   background-repeat: repeat;
   background-blend-mode: overlay, normal, normal, normal, normal;
-  animation: hero-gradient-animation 15s ease-in-out infinite alternate-reverse;
+  animation: hero-gradient-animation 20s ease-in-out infinite alternate-reverse;
   will-change: background-position, background;
 }
 
-@keyframes schedule-gradient-animation {
-  0% {
-    --xb-1: 60%; --yb-1: 24%;
-    --xb-3: 24%; --yb-3: 7%;
-  }
-  100% {
-    --xb-1: 2%; --yb-1: 25%;
-    --xb-3: 95%; --yb-3: 92%;
-  }
-}
+#schedule,
+#guests {
+  --cb-0: hsla(266, 1%, 12%, 1);
+  /* --cb-1: hsla(335, 2%, 22%, 1); */
+  --cb-2: hsla(54, 0%, 0%, 0.49);
+  --cb-3: hsla(299, 4%, 36%, 1);
 
-@property --xb-1 { syntax: "<percentage>"; inherits: false; initial-value: 60%; }
-@property --yb-1 { syntax: "<percentage>"; inherits: false; initial-value: 24%; }
-@property --xb-3 { syntax: "<percentage>"; inherits: false; initial-value: 24%; }
-@property --yb-3 { syntax: "<percentage>"; inherits: false; initial-value: 7%; }
+  --sb-start-0: 9%;
+  --sb-end-0: 55%;
+  --sb-start-1: 5%;
+  --sb-end-1: 72%;
+  --sb-start-2: 5%;
+  --sb-end-2: 52%;
+  --sb-start-3: 13%;
+  --sb-end-3: 68%;
 
-#schedule {
-  --cb-0: hsla(266,1%,12%,1);
-  --cb-1: hsla(335,2%,22%,1);
-  --cb-2: hsla(54,0%,0%,0.49);
-  --cb-3: hsla(299,4%,36%,1);
+  --xb-0: 85%;
+  --yb-0: 80%;
+  --xb-1: 60%;
+  --yb-1: 24%;
+  --xb-2: 13%;
+  --yb-2: 82%;
+  --xb-3: 24%;
+  --yb-3: 7%;
 
-  --sb-start-0: 9%; --sb-end-0: 55%;
-  --sb-start-1: 5%; --sb-end-1: 72%;
-  --sb-start-2: 5%; --sb-end-2: 52%;
-  --sb-start-3: 13%; --sb-end-3: 68%;
-
-  --xb-0: 85%; --yb-0: 80%;
-  --xb-1: 60%; --yb-1: 24%;
-  --xb-2: 13%; --yb-2: 82%;
-  --xb-3: 24%; --yb-3: 7%;
-
-  background-color: hsla(0,0%,0%,1);
-  background-image: 
-    url("/assets/bg-noise.svg"),
-    radial-gradient(circle at var(--xb-0) var(--yb-0), var(--cb-0) var(--sb-start-0), transparent var(--sb-end-0)),
-    radial-gradient(circle at var(--xb-1) var(--yb-1), var(--cb-1) var(--sb-start-1), transparent var(--sb-end-1)),
-    radial-gradient(circle at var(--xb-2) var(--yb-2), var(--cb-2) var(--sb-start-2), transparent var(--sb-end-2)),
-    radial-gradient(circle at var(--xb-3) var(--yb-3), var(--cb-3) var(--sb-start-3), transparent var(--sb-end-3));
+  background-color: var(--colors-gray-950);
+  background-image: url("/assets/bg-noise.svg"),
+    radial-gradient(
+      circle at var(--xb-0) var(--yb-0),
+      var(--cb-0) var(--sb-start-0),
+      transparent var(--sb-end-0)
+    ),
+    /* radial-gradient(
+      circle at var(--xb-1) var(--yb-1),
+      var(--cb-1) var(--sb-start-1),
+      transparent var(--sb-end-1)
+    ), */
+      radial-gradient(
+        circle at var(--xb-2) var(--yb-2),
+        var(--cb-2) var(--sb-start-2),
+        transparent var(--sb-end-2)
+      ),
+    radial-gradient(
+      circle at var(--xb-3) var(--yb-3),
+      var(--cb-3) var(--sb-start-3),
+      transparent var(--sb-end-3)
+    );
   background-repeat: repeat;
-  background-blend-mode: overlay, normal, normal, normal, normal;
-  animation: schedule-gradient-animation 20s ease-in-out infinite alternate;
-  will-change: background-position, background;
+  background-blend-mode: overlay, normal, normal, normal;
+  /* animation: schedule-gradient-animation 25s ease-in-out infinite alternate;
+  will-change: background-position, background; */
 }

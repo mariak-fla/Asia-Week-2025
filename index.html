@@ -274,7 +274,7 @@
             </ul>
           </div>
 
-            <div class="schedule-btn-wrapper slide-controls">
+            <div class="slide-btn-wrapper slide-controls">
               <button class="btn slide-btn prev" aria-label="Previous slide.">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-left-icon lucide-chevron-left"><path d="m15 18-6-6 6-6" /></svg>
               </button>
@@ -288,8 +288,91 @@
 
       <section id="lecturers" style="background: rgb(99, 28, 28)"></section>
 
-      <section id="guests" style="background: rgb(32, 119, 67)">
-        <div class="carousel guest-carousel"></div>
+      <section id="guests">
+        <h3 id="guestTitle" class="white-label">Special Guests</h3>
+
+        <div class="carousel guest-carousel">
+          <ul class="carousel-track guest-slides">
+              <li class="guest-slide carousel-slide active">
+                <div class="guest-card">
+                  <div class="guest-img-wrapper">
+                    <img src="/assets/stingray.png" alt="">
+                    <div class="guest-decoration"></div>
+                  </div>
+
+                  <div class="guest-txt">
+                    <div class="title-wrapper">
+                      <h3 class="guest-name">Joanna Stingray</h3>
+                      <h4 class="guest-title" id="joannaTitle">Singer, Actress, Music Producer</h4>
+                    </div>
+
+                    <p class="guest-description" id="joannaDescription">
+                      American singer, producer, and writer who introduced Soviet rock to Western audiences, building cultural exchange through music and art between the United States, Russia, and Japan since the 1980s.
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li class="guest-slide carousel-slide">
+                <div class="guest-card">
+                  <div class="guest-img-wrapper">
+                    <img src="/assets/nougmanov.png" alt="">
+                    <div class="guest-decoration"></div>
+                  </div>
+
+                  <div class="guest-txt">
+                    <div class="title-wrapper">
+                      <h3 class="guest-name">Rachid Nougmanov</h3>
+                      <h4 class="guest-title" id="rachidTitle">Film Director</h4>
+                    </div>
+
+                    <p class="guest-description" id="rachidDescription">
+                      Director of The Needle. A Kazakh film director, screenwriter, and producer. A pioneer of Kazakh new wave cinema, he connects Central Asian narratives with global audiences.
+                    </p>
+
+                    <div class="desktop-slide-btn-wrapper desktop-slide-controls">
+                      <button class="btn slide-btn prev" aria-label="Previous slide.">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-left-icon lucide-chevron-left"><path d="m15 18-6-6 6-6" /></svg>
+                      </button>
+                      <button class="btn slide-btn next" aria-label="Next slide">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right-icon lucide-chevron-right"><path d="m9 18 6-6-6-6" /></svg>
+                      </button>
+                    </div>
+
+                  </div>
+                </div>
+              </li>
+
+              <li class="guest-slide carousel-slide">
+                <div class="guest-card">
+                  <div class="guest-img-wrapper">
+                    <img src="/assets/miyake.png" alt="">
+                    <div class="guest-decoration"></div>
+                  </div>
+
+                  <div class="guest-txt">
+                    <div class="title-wrapper">
+                      <h3 class="guest-name">Kiki Miyake</h3>
+                      <h4 class="guest-title" id="miyakeTitle">Executive Film Producer</h4>
+                    </div>
+
+                    <p class="guest-description" id="miyakeDescription">
+                      Producer at Amuse Inc. and founder of Little Magic Films, develops internationally acclaimed projects that bridge Japanese cinema with global audiences, fostering cross-cultural storytelling and innovative film collaborations.
+                    </p>
+                  </div>
+                </div>
+              </li>
+          </ul>
+
+            <div class="slide-btn-wrapper slide-controls">
+              <button class="btn slide-btn prev" aria-label="Previous slide.">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-left-icon lucide-chevron-left"><path d="m15 18-6-6 6-6" /></svg>
+              </button>
+              <button class="btn slide-btn next" aria-label="Next slide">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right-icon lucide-chevron-right"><path d="m9 18 6-6-6-6" /></svg>
+              </button>
+            </div>
+        </div>
       </section>
 
       <section id="partners" style="background: rgb(193, 31, 131)"></section>
@@ -301,97 +384,6 @@
       <div id="footer"></div>
     </footer>
 
-    <script>
-      $(function () {
-        $("#navbar").load("navbar.html");
-        $("#footer").load("footer.html");
-      });
-
-      // Language toggle
-      let translations = {};
-      $.getJSON("translation.json", function (data) {
-        data.forEach((item) => {
-          translations[item.key] = item.value;
-        });
-        updateLanguage();
-      });
-
-      $(document).on("change", "#lang-toggle", function () {
-        updateLanguage();
-      });
-
-      function updateLanguage() {
-        const isJP = $("#lang-toggle").is(":checked");
-        const lang = isJP ? "jp" : "en";
-        const ids = [
-          "mainTitle",
-          "mainSubtitle",
-          "heroDescription",
-          "dateLine1",
-          "dateLine2",
-          "dateLine3",
-          "signUp",
-          "scheduleTitle",
-          "activityTitle1",
-          "location",
-          "prevBtn",
-          "nextBtn",
-          "moderator",
-          "heloisaTitle",
-          "Break",
-        ];
-        ids.forEach((id) => {
-          const key = `${id}_${lang}`;
-          if (translations[key]) {
-            $(`#${id}`).html(translations[key]);
-          }
-        });
-      }
-
-      // Carousel Logic
-      function initCarousel(carouselSelector) {
-        const $carousel = $(carouselSelector);
-        const $track = $carousel.find('.carousel-track');
-        const $slides = $track.children('.carousel-slide');
-        const $prev = $carousel.parent().find('.slide-btn.prev');
-        const $next = $carousel.parent().find('.slide-btn.next');
-        let current = 0;
-        const total = $slides.length;
-
-        function updateCarousel() {
-          // $slides.removeClass('active');
-          // $slides.eq(current).addClass('active');
-          // Only slide on mobile
-          if (window.innerWidth < 1025) {
-            $track.css('transform', `translateX(-${current * 100}vw)`);
-          } else {
-            $track.css('transform', 'none');
-          }
-        }
-
-        $prev.on('click', function(e) {
-          e.preventDefault();
-          current = (current - 1 + total) % total;
-          updateCarousel();
-        });
-        $next.on('click', function(e) {
-          e.preventDefault();
-          current = (current + 1) % total;
-          updateCarousel();
-        });
-
-        // Responsive: reset on resize
-        $(window).on('resize', updateCarousel);
-        updateCarousel();
-      }
-
-      // Init all carousels on page
-      $(function() {
-        initCarousel('.schedule-carousel');
-        // If you add more carousels, call initCarousel with their selector
-      });
-    </script>
-    
-    <script src="viewport-fix.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
