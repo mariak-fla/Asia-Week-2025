@@ -448,7 +448,8 @@ a.btn.sign-up svg {
 .event-info-txt .title,
 .event-info-txt .subtitle,
 #scheduleTitle,
-#guestTitle {
+#guestTitle,
+#lecturersTitle {
   font-size: var(--fs-lg);
 }
 
@@ -466,7 +467,8 @@ a.btn.sign-up svg {
 }
 
 .timeline,
-#guests {
+#guests,
+#lecturers {
   height: 100%;
   width: 100vw;
   align-items: center;
@@ -476,6 +478,7 @@ a.btn.sign-up svg {
 }
 
 .white-label,
+.black-label,
 .timeslot h4 {
   padding: 0.4rem 1.6rem;
   line-height: 50%;
@@ -501,12 +504,21 @@ a.btn.sign-up svg {
   left: 50vw;
 }
 
-.white-label {
-  color: var(--colors-gray-950);
+.white-label,
+.black-label {
   font-weight: 700;
   text-transform: uppercase;
-  background-color: var(--colors-gray-50);
   width: fit-content;
+}
+
+.white-label {
+  color: var(--colors-gray-950);
+  background-color: var(--colors-gray-50);
+}
+
+.black-label {
+  color: var(--colors-gray-50);
+  background-color: var(--colors-gray-950);
 }
 
 a.location {
@@ -644,7 +656,7 @@ span.bold {
 }
 
 .guest-img-wrapper {
-  margin-left: calc(50% - 3rem);
+  margin-left: calc(50%);
   transform: translateX(-50%);
   position: relative;
   /* overflow: visible; */
@@ -653,7 +665,7 @@ span.bold {
 
 .guest-img-wrapper img,
 .guest-decoration {
-  width: 100%;
+  width: 95%;
   border-radius: var(--card-border-radius);
 }
 
@@ -669,12 +681,12 @@ h3.guest-name {
 }
 
 h4.guest-title {
-  font-size: var(--fs-lg);
+  font-size: var(--fs-md);
   color: var(--colors-accent);
 }
 
 p.guest-description {
-  font-size: var(--fs-md);
+  font-size: var(--fs-sm);
   color: var(--colors-gray-200);
 }
 
@@ -683,8 +695,8 @@ p.guest-description {
   content: "";
   position: absolute;
   z-index: 1;
-  top: -3rem;
-  left: 3rem;
+  top: -2rem;
+  left: 2rem;
   height: 100%;
   pointer-events: none;
 }
@@ -695,6 +707,26 @@ p.guest-description {
 
 .desktop-slide-btn-wrapper {
   display: none;
+}
+
+.lecturer-card-wrapper {
+padding: 5.6rem 2rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.lecturer-card {
+  background-color: var(--colors-card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  /* width: 90vw; */
+}
+
+.lecturer-card-header img {
+  border-radius: 50%;
+  width: 6.2rem;
+  height: 6.2rem;
 }
 
 /* Very Tiny Mobile */
@@ -1129,11 +1161,6 @@ p.guest-description {
     gap: 0.4rem;
   }
 
-  h3.guest-name {
-    color: var(--colors-gray-50);
-    font-size: var(--fs-xl);
-  }
-
   h4.guest-title {
     font-size: var(--fs-lg);
     color: var(--colors-accent);
@@ -1283,7 +1310,7 @@ p.guest-description {
   --y-3: 8%;
 
   background-color: rgb(8, 40, 66);
-  background-image: url("/assets/bg-noise.svg"),
+  background-image: url("/assets/bg-noise.png"),
     radial-gradient(
       circle at var(--x-0) var(--y-0),
       var(--c-0) var(--s-start-0),
@@ -1306,8 +1333,24 @@ p.guest-description {
     );
   background-repeat: repeat;
   background-blend-mode: overlay, normal, normal, normal, normal;
-  animation: hero-gradient-animation 20s ease-in-out infinite alternate-reverse;
+  animation: hero-gradient-animation 17s ease-in-out infinite alternate-reverse;
   will-change: background-position, background;
+}
+
+#lecturers {
+  --cb-0: hsla(266, 1%, 12%, 1);
+  --cb-1: hsla(0, 0%, 43%, 0.49);
+  --cb-2: hsla(0, 7%, 16%, 0.49);
+  --cb-3: rgb(151, 126, 151);
+
+  background-color: var(--colors-gray-950);
+  background-image: url("/assets/bg-noise.png"),
+    radial-gradient(circle at 85% 80%, var(--cb-0) 9%, transparent 55%),
+    radial-gradient(circle at 60% 24%, var(--cb-1) 5%, transparent 72%),
+    radial-gradient(circle at 13% 82%, var(--cb-2) 5%, transparent 52%),
+    radial-gradient(circle at 24% 7%, var(--cb-3) 13%, transparent 68%);
+  background-repeat: repeat;
+  background-blend-mode: overlay, normal, normal, normal;
 }
 
 #schedule,
@@ -1336,7 +1379,7 @@ p.guest-description {
   --yb-3: 7%;
 
   background-color: var(--colors-gray-950);
-  background-image: url("/assets/bg-noise.svg"),
+  background-image: url("/assets/bg-noise.png"),
     radial-gradient(
       circle at var(--xb-0) var(--yb-0),
       var(--cb-0) var(--sb-start-0),
