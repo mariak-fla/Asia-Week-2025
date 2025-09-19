@@ -65,7 +65,13 @@ function initCarousel(carouselSelector) {
   const total = $slides.length;
 
   function updateCarousel() {
-    $track.css("transform", `translateX(-${current * 100}vw)`);
+    const slideWidth = $slides[0].offsetWidth;
+    const isDesktop = window.matchMedia("(min-width: 1025px)").matches;
+    if (isDesktop) {
+      $track.css("transform", `translateX(-${current * slideWidth}px)`);
+    } else {
+      $track.css("transform", `translateX(-${current * 100}vw)`);
+    }
   }
 
   $prev.on("click", function (e) {
