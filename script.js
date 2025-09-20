@@ -1,7 +1,12 @@
+
 $(function () {
   $("#navbar").load("navbar.html");
   $("#footer").load("footer.html");
+  setMainHeight();
+  initCarousel(".schedule-carousel");
+  initCarousel(".guest-carousel");
 });
+
 
 function setMainHeight() {
   const main = document.querySelector("main");
@@ -9,9 +14,9 @@ function setMainHeight() {
     main.style.height = window.innerHeight + "px";
   }
 }
-
 window.addEventListener("resize", setMainHeight);
 document.addEventListener("DOMContentLoaded", setMainHeight);
+
 
 // Language toggle
 let translations = {};
@@ -22,9 +27,7 @@ $.getJSON("translation.json", function (data) {
   updateLanguage();
 });
 
-$(document).on("change", "#lang-toggle", function () {
-  updateLanguage();
-});
+$(document).on("change", "#lang-toggle", updateLanguage);
 
 function updateLanguage() {
   const isJP = $("#lang-toggle").is(":checked");
@@ -53,6 +56,7 @@ function updateLanguage() {
     }
   });
 }
+
 
 // Carousel Logic
 function initCarousel(carouselSelector) {
@@ -88,8 +92,3 @@ function initCarousel(carouselSelector) {
   $(window).on("resize", updateCarousel);
   updateCarousel();
 }
-
-$(function () {
-  initCarousel(".schedule-carousel");
-  initCarousel(".guest-carousel");
-});

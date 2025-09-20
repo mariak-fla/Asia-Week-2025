@@ -27,8 +27,9 @@ a {
     inset 0 4px 4px hsla(224, 71%, 4%, 25%);
 
   --colors-card-bg: hsla(224, 71%, 4%, 50%);
+  --colors-accent-light: #d14747;
   --colors-accent: #b91c1c;
-  --colors-accent-700: #991b1b;
+  --colors-accent-dark: #991b1b;
   --colors-gray-50: #f9fafb;
   --colors-gray-200: #e5e7eb;
   --colors-gray-400: #9ca3af;
@@ -79,8 +80,8 @@ button {
   border: 2px solid var(--colors-accent);
 
   &:hover {
-    background-color: var(--colors-accent-700);
-    border-color: var(--colors-accent-700);
+    background-color: var(--colors-accent-dark);
+    border-color: var(--colors-accent-dark);
     transition: all 0.25s ease-in-out;
   }
 }
@@ -425,7 +426,8 @@ section {
   width: 6rem;
 }
 
-a.btn.sign-up {
+a.btn.sign-up,
+a.btn.contact-us {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -434,7 +436,8 @@ a.btn.sign-up {
   font-size: 1.6rem;
 }
 
-a.btn.sign-up svg {
+a.btn.sign-up svg,
+a.btn.contact-us svg {
   width: 1.6rem;
 }
 
@@ -449,7 +452,9 @@ a.btn.sign-up svg {
 .event-info-txt .subtitle,
 #scheduleTitle,
 #guestTitle,
-#lecturersTitle {
+#lecturersTitle,
+#partnersTitle,
+#contactTitle {
   font-size: var(--fs-lg);
 }
 
@@ -468,7 +473,9 @@ a.btn.sign-up svg {
 
 .timeline,
 #guests,
-#lecturers {
+#lecturers,
+#partners,
+#contact {
   height: 100%;
   width: 100vw;
   align-items: center;
@@ -524,10 +531,15 @@ a.btn.sign-up svg {
 a.location {
   display: flex;
   font-size: 1.2rem;
-  color: var(--colors-gray-200);
+  color: var(--colors-gray-400);
   align-items: center;
   gap: 0.8rem;
   margin: 0.8rem 0 2rem;
+  transition: 150ms ease-in-out;
+}
+
+a.location:hover {
+  color: var(--colors-gray-200);
 }
 
 a.location svg {
@@ -542,7 +554,9 @@ a.location svg {
 }
 
 .schedule-txt,
-.guest-txt {
+.guest-txt,
+.partners-wrapper,
+.contact-wrapper {
   padding: 2.8rem 2rem 50vh;
   border-top: 1px solid var(--border-color);
   border-radius: var(--card-border-radius) var(--card-border-radius) 0 0;
@@ -646,27 +660,26 @@ span.bold {
   align-items: center;
 }
 
-/* FIX THIS LATERR */
-/* #Break {
+.activity-title.break {
   color: var(--colors-gray-500);
-} */
+  font-weight: 600;
+}
 
-#guests {
-  gap: 5.2rem;
+#guests,
+#partners,
+#contact {
+  gap: 3.2rem;
 }
 
 .guest-img-wrapper {
-  margin-left: calc(50%);
-  transform: translateX(-50%);
+  margin-left: 50%;
+  transform: translateX(-65%);
   position: relative;
   /* overflow: visible; */
-  padding-top: 3rem;
 }
 
-.guest-img-wrapper img,
-.guest-decoration {
-  width: 95%;
-  border-radius: var(--card-border-radius);
+.guest-img-wrapper img {
+  height: 44vh;
 }
 
 .guest-card .title-wrapper {
@@ -690,17 +703,6 @@ p.guest-description {
   color: var(--colors-gray-200);
 }
 
-.guest-decoration {
-  border: 1px solid var(--border-color);
-  content: "";
-  position: absolute;
-  z-index: 1;
-  top: -2rem;
-  left: 2rem;
-  height: 100%;
-  pointer-events: none;
-}
-
 .guest-carousel {
   position: relative;
 }
@@ -710,7 +712,7 @@ p.guest-description {
 }
 
 .lecturer-card-wrapper {
-  padding: 3.2rem 2rem 0;
+  padding: 2vh 2rem 0;
   align-items: center;
 }
 
@@ -723,13 +725,14 @@ p.guest-description {
 
 .lecturer-card {
   background-color: var(--colors-card-bg);
-  border: 1px solid var(--border-color);
+  border-top: 1px solid var(--border-color);
   border-radius: var(--border-radius);
-  padding: 2rem 1.6rem;
+  padding: 1.2rem;
   color: var(--colors-gray-50);
   display: flex;
   flex-direction: column;
-  gap: 1.6rem;
+  gap: 0.8rem;
+  backdrop-filter: var(--backdrop-bg);
 }
 
 .lecturer-card-header img {
@@ -753,12 +756,93 @@ h5.lecturerTitle {
   padding-top: 0.2rem;
   font-size: var(--fs-sm);
   font-weight: 500;
-  color: var(--colors-gray-400);
+  color: var(--colors-accent-light);
 }
 
 .lecturer-card p {
   color: var(--colors-gray-200);
   font-size: var(--fs-xs);
+}
+
+.partners-wrapper {
+  gap: 3.2rem;
+  width: 100%;
+}
+
+.partner-logo svg {
+  fill: var(--colors-gray-50);
+  margin-left: 40%;
+  transform: translateX(-30%);
+}
+
+.contact-wrapper {
+  color: var(--colors-gray-50);
+  gap: 3.2rem;
+}
+
+.partner-contact-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+h4#partnerWithUs {
+  font-size: var(--fs-lg);
+}
+
+p#partnerWithUs {
+  font-size: var(--fs-md);
+  margin-bottom: 1.2rem;
+}
+
+.qaos-contact-wrapper {
+  margin: 3.2rem 0 1.6rem;
+}
+
+h5#forUpcomingEvents,
+h5#organizingCommittee {
+  color: var(--colors-gray-400);
+  font-size: var(--fs-lg);
+  font-weight: 300;
+}
+
+ul.qaos-contacts,
+ul.organizing-committee {
+  margin: 0.4rem 0 0 1rem;
+}
+
+ul.qaos-contacts li svg,
+ul.organizing-committee li svg {
+  width: 1.4rem;
+}
+
+ul.qaos-contacts li a,
+ul.organizing-committee li a {
+  font-size: var(--fs-sm);
+  color: var(--colors-gray-200);
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  transition: 150ms ease-in-out;
+}
+
+ul.qaos-contacts li a:hover,
+ul.organizing-committee li a:hover {
+  color: var(--colors-accent);
+}
+
+.organizer-title h6 {
+  font-size: var(--fs-md);
+}
+
+p.attributions {
+  font-size: var(--fs-xs);
+  color: var(--colors-gray-400);
+}
+
+a.organizer-contact {
+  margin-top: 0.4rem;
+  margin-bottom: 1.6rem;
 }
 
 /* Very Tiny Mobile */
@@ -945,8 +1029,7 @@ h5.lecturerTitle {
     background-image: radial-gradient(
         circle at 20% -30%,
         hsla(236, 100%, 23%, 75%) 0%,
-        /*
-        hsla(236, 93%, 17%, 70%) 30%,*/ transparent 50vw
+        transparent 50vw
       ),
       linear-gradient(
         90deg,
@@ -988,22 +1071,7 @@ h5.lecturerTitle {
     display: flex;
     flex-direction: column;
     justify-content: end;
-    /* background-image: radial-gradient(
-        circle at 20% -30%,
-        hsla(236, 100%, 23%, 75%) 0%,
-        hsla(236, 93%, 17%, 70%) 30%,
-        transparent 80%
-      ),
-      linear-gradient(
-        120deg,
-        hsla(236, 100%, 23%, 50%) 0%,
-        rgba(0, 0, 0, 0.25) 100%
-      );
-    background-blend-mode: multiply, multiply; */
     background-image: none;
-    /* background-color: var(--colors-gray-950); */
-    /* background-color: var(--colors-card-bg);
-    background-image: none; */
   }
 
   .event-info {
@@ -1047,20 +1115,6 @@ h5.lecturerTitle {
     flex-direction: column;
     gap: 0.8rem;
   }
-
-  /* .event-info-txt .title,
-  .event-info-txt .subtitle {
-    font-size: var(--fs-lg);
-  }
-
-  .event-info-txt .description,
-  a.btn.sign-up {
-    font-size: var(--fs-md);
-  }
-
-  a.btn.sign-up {
-    font-size: var(--fs-md);
-  } */
 
   .timeline {
     height: 100vh;
@@ -1147,10 +1201,15 @@ h5.lecturerTitle {
     justify-content: center;
   }
 
-  #guests {
-    padding-top: 12rem;
+  #partners,
+  #guests,
+  #contact {
+    padding: 12rem 0 6rem;
     gap: 8rem;
     height: 100vh;
+  }
+
+  #guests {
     align-content: flex-end;
   }
 
@@ -1158,14 +1217,10 @@ h5.lecturerTitle {
     margin-left: 0;
     transform: none;
     position: relative;
-    padding-top: 0;
   }
 
-  .guest-img-wrapper img,
-  .guest-decoration {
-    max-width: 40vw;
-    width: 35rem;
-    border-radius: 2rem;
+  .guest-img-wrapper img {
+    height: 60vh;
     object-fit: cover;
   }
 
@@ -1183,7 +1238,6 @@ h5.lecturerTitle {
   }
 
   .guest-txt {
-    /* align-content: flex-end; */
     height: fit-content;
     padding: 2.8rem 2rem;
     border-radius: var(--card-border-radius);
@@ -1191,12 +1245,11 @@ h5.lecturerTitle {
 
   .guest-card .title-wrapper {
     display: flex;
-    /* flex-direction: column; */
     gap: 0.4rem;
   }
 
   h4.guest-title {
-    font-size: var(--fs-lg);
+    font-size: var(--fs-md);
     color: var(--colors-accent);
   }
 
@@ -1204,17 +1257,6 @@ h5.lecturerTitle {
     font-size: var(--fs-sm);
     color: var(--colors-gray-200);
   }
-
-  /* .guest-decoration {
-    border: 1px solid var(--border-color);
-    content: "";
-    position: absolute;
-    z-index: 1;
-    top: -3rem;
-    left: 3rem;
-    height: 100%;
-    pointer-events: none;
-  } */
 
   .guest-carousel {
     position: relative;
@@ -1229,7 +1271,6 @@ h5.lecturerTitle {
 
   .guest-carousel .slide-btn-wrapper {
     display: none;
-    /* margin-left: 15vw; */
   }
 
   .desktop-slide-btn-wrapper {
@@ -1239,6 +1280,126 @@ h5.lecturerTitle {
 
     position: relative;
     z-index: 10;
+  }
+
+  #lecturers,
+  #partners,
+  #contact {
+    justify-content: center;
+  }
+
+  .lecturer-card-wrapper {
+    padding: 3.2rem 0 0;
+    padding: 6rem 0 0;
+    max-width: 80vw;
+  }
+
+  .lecturer-card-wrapper .row {
+    flex-direction: row;
+  }
+
+  .lecturer-card-wrapper,
+  .lecturer-card-wrapper .row {
+    gap: 2rem;
+  }
+
+  .lecturer-card {
+    padding: 2rem 1.6rem;
+    gap: 1.6rem;
+    width: 50%;
+  }
+
+  .lecturer-card-header img {
+    width: 5.2rem;
+    height: 5.2rem;
+  }
+
+  h5.lecturerTitle {
+    padding-top: 0rem;
+    font-size: var(--fs-md);
+  }
+
+  .lecturer-card p {
+    font-size: var(--fs-sm);
+  }
+
+  .partners-wrapper {
+    gap: 3.6rem;
+    padding: 3.2rem 0;
+    flex-direction: row;
+    justify-content: center;
+    border-radius: var(--border-radius);
+  }
+
+  .partner-logo svg {
+    margin-left: 0;
+    transform: none;
+    width: 22rem;
+  }
+
+  .contact-wrapper {
+    color: var(--colors-gray-50);
+    gap: 3.2rem;
+  }
+
+  .partner-contact-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+  }
+
+  h4#partnerWithUs {
+    font-size: var(--fs-lg);
+  }
+
+  p#partnerWithUs {
+    font-size: var(--fs-md);
+    margin-bottom: 1.2rem;
+  }
+
+  .contact-wrapper {
+    padding: 0;
+    border: none;
+    border-radius: 0;
+    background-color: transparent;
+    width: 80vw;
+    flex-direction: row;
+  }
+
+  .contact-card {
+    width: 50%;
+    border-top: 1px solid var(--border-color);
+    background-color: var(--colors-card-bg);
+    padding: 2rem 2.4rem 4rem;
+    border-radius: var(--card-border-radius);
+  }
+
+  .qaos-contact-wrapper {
+    margin: 3.2rem 0 0;
+  }
+
+  ul.qaos-contacts,
+  ul.organizing-committee {
+    margin: 0.4rem 0 0 1.6rem;
+  }
+
+  ul.qaos-contacts li svg,
+  ul.organizing-committee li svg {
+    width: 1.6rem;
+  }
+
+  ul.qaos-contacts li a,
+  ul.organizing-committee li a {
+    font-size: var(--fs-md);
+    gap: 1.2rem;
+  }
+
+  .organizer-title h6 {
+    font-size: var(--fs-md);
+  }
+
+  p.attributions {
+    font-size: var(--fs-sm);
   }
 }
 
@@ -1267,7 +1428,7 @@ h5.lecturerTitle {
   }
 }
 
-/* faaaaaabulous gradient animations */
+/* faaaaaabulous gradients */
 @keyframes hero-gradient-animation {
   0% {
     --x-0: 0%;
@@ -1343,7 +1504,7 @@ h5.lecturerTitle {
   --y-3: 8%;
 
   background-color: rgb(8, 40, 66);
-  background-image: url("/assets/bg-noise.png"),
+  background-image: url("/assets/noise-texture.jpg"),
     radial-gradient(
       circle at var(--x-0) var(--y-0),
       var(--c-0) var(--s-start-0),
@@ -1370,26 +1531,12 @@ h5.lecturerTitle {
   will-change: background-position, background;
 }
 
-#lecturers {
-  --cb-0: hsla(266, 1%, 12%, 1);
-  --cb-1: hsla(0, 0%, 43%, 0.49);
-  --cb-2: hsla(0, 7%, 16%, 0.49);
-  --cb-3: rgb(151, 126, 151);
-
-  background-color: var(--colors-gray-950);
-  background-image: url("/assets/bg-noise.png"),
-    radial-gradient(circle at 85% 80%, var(--cb-0) 9%, transparent 55%),
-    radial-gradient(circle at 60% 24%, var(--cb-1) 5%, transparent 72%),
-    radial-gradient(circle at 13% 82%, var(--cb-2) 5%, transparent 52%),
-    radial-gradient(circle at 24% 7%, var(--cb-3) 13%, transparent 68%);
-  background-repeat: repeat;
-  background-blend-mode: overlay, normal, normal, normal;
-}
-
+#lecturers,
 #schedule,
-#guests {
+#guests,
+#partners,
+#contact {
   --cb-0: hsla(266, 1%, 12%, 1);
-  /* --cb-1: hsla(335, 2%, 22%, 1); */
   --cb-2: hsla(54, 0%, 0%, 0.49);
   --cb-3: hsla(299, 4%, 36%, 1);
 
@@ -1412,29 +1559,32 @@ h5.lecturerTitle {
   --yb-3: 7%;
 
   background-color: var(--colors-gray-950);
-  background-image: url("/assets/bg-noise.png"),
+  background-image: url("assets/noise-texture.jpg"),
     radial-gradient(
       circle at var(--xb-0) var(--yb-0),
       var(--cb-0) var(--sb-start-0),
       transparent var(--sb-end-0)
     ),
-    /* radial-gradient(
-      circle at var(--xb-1) var(--yb-1),
-      var(--cb-1) var(--sb-start-1),
-      transparent var(--sb-end-1)
-    ), */
-      radial-gradient(
-        circle at var(--xb-2) var(--yb-2),
-        var(--cb-2) var(--sb-start-2),
-        transparent var(--sb-end-2)
-      ),
+    radial-gradient(
+      circle at var(--xb-2) var(--yb-2),
+      var(--cb-2) var(--sb-start-2),
+      transparent var(--sb-end-2)
+    ),
     radial-gradient(
       circle at var(--xb-3) var(--yb-3),
       var(--cb-3) var(--sb-start-3),
       transparent var(--sb-end-3)
     );
   background-repeat: repeat;
+}
+
+#schedule,
+#guests,
+#contact {
+  background-blend-mode: multiply, normal, normal, normal;
+}
+
+#lecturers,
+#partners {
   background-blend-mode: overlay, normal, normal, normal;
-  /* animation: schedule-gradient-animation 25s ease-in-out infinite alternate;
-  will-change: background-position, background; */
 }
