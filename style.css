@@ -895,6 +895,7 @@ a.organizer-contact {
   .schedule-card img {
     max-height: 20vh;
     width: auto;
+    object-fit: cover;
     margin: 0 50%;
     transform: translateX(-50%);
   }
@@ -1172,6 +1173,7 @@ a.organizer-contact {
 
   .guest-slides {
     justify-content: flex-start;
+    gap: 0 !important;
   }
 
   .carousel-slide {
