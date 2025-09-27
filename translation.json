@@ -11,11 +11,11 @@
   },
   {
     "key": "heroDescription_en",
-    "value": "Asia Week is a <span class=\"bold\">free</span>, community-centered event dedicated to examining cultures across Asia, conducted in English and Japanese. This year's program celebrates Viktor Tsoi's international legacy across cinema, music, and art. Join us!"
+    "value": "Join us for a screening of The Needle, with the presence of its director, Rachid Nougmanov. The event will also have lectures about the connections among Viktor Tsoi, Kino, and Asia, and will have very special international guests, who will participate in round tables with the audience."
   },
   {
     "key": "heroDescription_jp",
-    "value": "Asia Week is a <span class=\"bold\">free</span>, community-centered event dedicated to examining cultures across Asia, conducted in English and Japanese. This year's program celebrates Viktor Tsoi's international legacy across cinema, music, and art. Join us!"
+    "value": "Join us for a screening of The Needle, with the presence of its director, Rachid Nougmanov. The event will also have lectures about the connections among Viktor Tsoi, Kino, and Asia, and will have very special international guests, who will participate in round tables with the audience."
   },
   { "key": "dateLine1_en", "value": "08" },
   { "key": "dateLine1_jp", "value": "8日" },
@@ -32,8 +32,14 @@
     "value": "Kyushu University, Ohashi Campus, Design Commons"
   },
   { "key": "location_jp", "value": "九州大学 大橋キャンパス デザインコモンズ" },
-  { "key": "activityTitle1_en", "value": "<span class=\"bold\">Welcome Remarks</span>" },
-  { "key": "activityTitle1_jp", "value": "<span class=\"bold\">Welcome Remarks</span>" },
+  {
+    "key": "activityTitle1_en",
+    "value": "<span class=\"bold\">Welcome Remarks</span>"
+  },
+  {
+    "key": "activityTitle1_jp",
+    "value": "<span class=\"bold\">Welcome Remarks</span>"
+  },
   {
     "key": "activityTitle2_en",
     "value": "<span class=\"bold\">Historical Context:</span> Viktor Tsoi's Lasting Influence Throughout Asia"
@@ -68,8 +74,14 @@
   { "key": "associateProfessor_jp", "value": "Associate Professor" },
   { "key": "activityTitle5_en", "value": "TBA" },
   { "key": "activityTitle5_jp", "value": "TBA" },
-  { "key": "activityTitle6_en", "value": "Russian Underground Art and Music during Perestroika" },
-  { "key": "activityTitle6_jp", "value": "Russian Underground Art and Music during Perestroika" },
+  {
+    "key": "activityTitle6_en",
+    "value": "Russian Underground Art and Music during Perestroika"
+  },
+  {
+    "key": "activityTitle6_jp",
+    "value": "Russian Underground Art and Music during Perestroika"
+  },
   { "key": "professor_en", "value": "Professor" },
   { "key": "professor_jp", "value": "Professor" },
   { "key": "activityTitle7_en", "value": "Viktor Tsoi in South Korea" },

@@ -1,3 +1,175 @@
+.hero-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.tsoi-hero {
+  position: relative;
+  display: block;
+  bottom: -7.5vh;
+}
+
+.tsoi-hero img {
+  width: 75%;
+  left: 50%;
+  transform: translateX(-50%);
+  height: fit-content;
+  min-height: 100%;
+  position: relative;
+  z-index: 3;
+}
+
+.donut-stack {
+  position: absolute;
+  top: 0;
+  right: 25%;
+  width: 30%; /* proportion of Tsoi's width */
+  aspect-ratio: 1 / 1;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.asia-week-donut,
+.sontsa-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.asia-week-donut {
+  width: 100%;
+  height: 100%;
+  background-image: url("assets/asia-week-donut.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  z-index: 2;
+}
+
+.sontsa-overlay {
+  width: 172.5%;
+  height: 172.5%;
+  top: -26%;
+  left: -34%;
+  z-index: 1;
+  background-image: url("assets/sontsa.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+}
+
+.hero-cta {
+  background-image: linear-gradient(
+    to bottom,
+    transparent 0%,
+    var(--colors-gray-950) 22.5%
+  );
+  padding: 5.2rem 2rem 7.2rem;
+  color: var(--colors-gray-50);
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+  z-index: 4;
+}
+
+.event-info {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: flex-start;
+  gap: 3.6rem;
+  padding: 0 2rem;
+}
+
+.event-info-txt h1.title {
+  font-weight: 600;
+}
+
+.event-info-txt h2.subtitle {
+  font-weight: normal;
+  font-style: italic;
+}
+
+.event-info-txt .description {
+  font-size: var(--fs-md);
+}
+
+.date-wrapper {
+  left: 0;
+  top: 0;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  transform: rotate(270deg);
+  width: 1rem;
+  margin-top: 12rem;
+}
+
+.date-line-1,
+.date-line-2,
+.date-line-3 {
+  white-space: nowrap;
+}
+.date-line-2,
+.date-line-3 {
+  text-align: left;
+}
+
+.date-line-1 {
+  font-weight: 900;
+  font-size: 4rem;
+  text-align: right;
+  min-width: 9rem;
+}
+
+.date-line-2 {
+  font-weight: 600;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+.date-line-3 {
+  font-weight: 400;
+  font-size: 1.4rem;
+  width: 6rem;
+}
+
+a.btn.sign-up,
+a.btn.contact-us {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1.6rem;
+}
+
+a.btn.sign-up svg,
+a.btn.contact-us svg {
+  width: 1.6rem;
+}
+
+.event-info-txt {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  flex-grow: 2;
+}
+
+/* TODO: ???? used? */
+.event-info-txt .title,
+.event-info-txt .subtitle,
+#scheduleTitle,
+#guestTitle,
+#lecturersTitle,
+#partnersTitle,
+#contactTitle {
+  font-size: var(--fs-lg);
+}
+
 /* Very Tiny Mobile */
 @media screen and (max-height: 700px) {
   .tsoi-hero {
@@ -204,15 +376,17 @@
 
   .donut-stack {
     top: -2.5%;
-    right: calc(30% + 5vw);
+    right: calc(30% + 7.5vw);
     width: 30%;
   }
 
   .tsoi-hero img {
-    left: -5vw;
+    left: -10vw;
     transform: translateX(0);
-    width: fit-content;
-    height: min(70vh, 980px);
+    width: min(45rem, 30vw);
+    /* min-width: 100%; */
+    /* height: 900px; */
+    /* height: min(70vh, 980px); */
   }
 
   .hero-cta {
@@ -222,6 +396,7 @@
     left: 0;
     gap: 3.2rem;
     padding-left: min(10vw, 13.2rem);
+    padding-right: max(3vw, 2.5rem);
     display: flex;
     flex-direction: column;
     justify-content: end;
@@ -659,8 +834,7 @@
   --y-3: 8%;
 
   background-color: rgb(8, 40, 66);
-  background-image: url("/assets/noise-texture.jpg"),
-    radial-gradient(
+  background-image: radial-gradient(
       circle at var(--x-0) var(--y-0),
       var(--c-0) var(--s-start-0),
       transparent var(--s-end-0)
@@ -679,10 +853,12 @@
       circle at var(--x-3) var(--y-3),
       var(--c-3) var(--s-start-3),
       transparent var(--s-end-3)
-    );
-  background-repeat: repeat;
-  background-blend-mode: overlay, normal, normal, normal, normal;
+    ),
+    url("/assets/gradient-placeholder.jpg");
+  background-repeat: no-repeat;
+  background-blend-mode: normal;
   animation: hero-gradient-animation 17s ease-in-out infinite alternate-reverse;
+  background-size: cover;
   will-change: background-position, background;
 }
 
@@ -734,12 +910,14 @@
 }
 
 #schedule,
-#guests,
+/* #guests, */
+#lecturers,
 #contact {
   background-blend-mode: multiply, normal, normal, normal;
 }
 
-#lecturers,
+#guests,
+/* #lecturers, */
 #partners {
   background-blend-mode: overlay, normal, normal, normal;
 }
