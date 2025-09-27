@@ -1,0 +1,60 @@
+.contact-wrapper {
+  color: var(--colors-gray-50);
+  gap: 3.2rem;
+}
+
+.partner-contact-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.qaos-contact-wrapper {
+  margin: 3.2rem 0 1.6rem;
+}
+
+h5#forUpcomingEvents,
+h5#organizingCommittee {
+  color: var(--colors-gray-400);
+  font-size: var(--fs-lg);
+  font-weight: 300;
+}
+
+ul.qaos-contacts,
+ul.organizing-committee {
+  margin: 0.4rem 0 0 1rem;
+}
+
+ul.qaos-contacts li svg,
+ul.organizing-committee li svg {
+  width: 1.4rem;
+}
+
+ul.qaos-contacts li a,
+ul.organizing-committee li a {
+  font-size: var(--fs-sm);
+  color: var(--colors-gray-200);
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  transition: 150ms ease-in-out;
+}
+
+ul.qaos-contacts li a:hover,
+ul.organizing-committee li a:hover {
+  color: var(--colors-accent);
+}
+
+.organizer-title h6 {
+  font-size: var(--fs-md);
+}
+
+p.attributions {
+  font-size: var(--fs-xs);
+  color: var(--colors-gray-400);
+}
+
+a.organizer-contact {
+  margin-top: 0.4rem;
+  margin-bottom: 1.6rem;
+}

@@ -1,0 +1,40 @@
+.guest-txt {
+  /* padding: 2.8rem 2rem 50vh; */
+  gap: 1.6rem;
+}
+
+.guest-img-wrapper {
+  margin-left: 50%;
+  transform: translateX(-65%);
+  position: relative;
+  /* overflow: visible; */
+}
+
+.guest-img-wrapper img {
+  height: 44vh;
+}
+
+.guest-card .title-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+h3.guest-name {
+  color: var(--colors-gray-50);
+  font-size: var(--fs-xl);
+}
+
+h4.guest-title {
+  font-size: var(--fs-md);
+  color: var(--colors-accent);
+}
+
+p.guest-description {
+  font-size: var(--fs-sm);
+  color: var(--colors-gray-200);
+}
+
+.guest-carousel {
+  position: relative;
+}

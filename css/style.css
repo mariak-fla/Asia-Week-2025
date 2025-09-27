@@ -1,0 +1,745 @@
+/* Very Tiny Mobile */
+@media screen and (max-height: 700px) {
+  .tsoi-hero {
+    bottom: -9.5vh;
+  }
+
+  .tsoi-hero img {
+    width: calc(5rem + 40vw + 10vh);
+  }
+
+  .donut-stack {
+    top: -2.5%;
+    right: 30%;
+    width: 20%;
+  }
+
+  .hero-cta {
+    padding: 5.6rem 2rem 5.6rem;
+    gap: 2rem;
+  }
+
+  .event-info-txt .title,
+  .event-info-txt .subtitle {
+    font-size: var(--fs-lg);
+  }
+
+  .event-info-txt .description {
+    font-size: var(--fs-md);
+  }
+
+  .activity-time,
+  .activity-title,
+  .timeslot h4 {
+    font-size: var(--fs-sm);
+  }
+
+  .slide-btn {
+    width: 3rem;
+    height: 3rem;
+  }
+
+  .slide-btn-wrapper {
+    bottom: 63vh;
+    width: 90vw;
+    left: 5vw;
+  }
+
+  .schedule-card img {
+    max-height: 20vh;
+    width: auto;
+    object-fit: cover;
+    margin: 0 50%;
+    transform: translateX(-50%);
+  }
+}
+
+/* Tablet */
+/* @media screen and (min-width: 701px) {
+  .tsoi-hero {
+    bottom: -15vh;
+  }
+
+  .tsoi-hero img {
+    width: calc(10rem + 40vw + 5vh);
+  }
+
+  .donut-stack {
+    right: 32%;
+    top: -7%;
+    width: 20%;
+  }
+
+  .hero-cta {
+    padding: 5.6rem 3.2rem 7.2rem;
+    gap: 2.8rem;
+  }
+
+  .event-info {
+    gap: 5.6rem;
+  }
+
+  .date-wrapper {
+    gap: 1.2rem;
+    margin-top: 15rem;
+  }
+
+  .date-line-1 {
+    font-size: 4.8rem;
+    min-width: 10rem;
+  }
+
+  .date-line-2 {
+    font-size: 2.4rem;
+  }
+
+  .date-line-3 {
+    font-size: 1.6rem;
+    width: 7rem;
+  }
+
+  .event-info-txt {
+    gap: 1rem;
+  }
+
+  .event-info-txt .title,
+  .event-info-txt .subtitle {
+    font-size: var(--fs-tablet-lg);
+  }
+
+  .event-info-txt .description {
+    font-size: var(--fs-tablet-md);
+  }
+} */
+
+/* Desktop */
+@media screen and (min-width: 1025px) {
+  :root {
+    --fs-cta: 1.6rem;
+    --fs-lg: 2.4rem;
+    --fs-md: 1.6rem;
+    --fs-sm: 1.4rem;
+    --fs-xs: 1.3rem;
+  }
+
+  .nav,
+  .footer {
+    gap: 4rem;
+  }
+
+  .nav {
+    padding: 2rem max(5vw, 5rem) 1.6rem;
+  }
+
+  .footer {
+    padding: 1.6rem max(5vw, 5rem);
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  .footer svg {
+    width: 2rem;
+  }
+
+  .btn {
+    padding: 1.2rem 0;
+  }
+
+  ul.menu {
+    flex-direction: row;
+    gap: 3.2rem;
+
+    font-size: 1.6rem;
+
+    position: relative;
+    opacity: 1;
+
+    width: fit-content;
+    height: fit-content;
+
+    top: 0;
+    left: 0;
+
+    background: none;
+    backdrop-filter: none;
+    z-index: 99;
+  }
+
+  ul.menu a:hover {
+    color: var(--colors-gray-400);
+  }
+
+  .hero-wrapper {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-end;
+    justify-content: center;
+    gap: max(5vw, 20rem);
+    padding: 0 max(5vw, 5rem);
+    background-image: radial-gradient(
+        circle at 20% -30%,
+        hsla(236, 100%, 23%, 75%) 0%,
+        transparent 50vw
+      ),
+      linear-gradient(
+        90deg,
+        hsla(236, 100%, 23%, 50%) 0%,
+        rgba(0, 0, 0, 0.25) calc(50vw + 4rem),
+        transparent calc(50vw + 4rem)
+      );
+    background-blend-mode: multiply, multiply;
+  }
+
+  .tsoi-hero {
+    position: relative;
+    bottom: 0;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+  }
+
+  .donut-stack {
+    top: -2.5%;
+    right: calc(30% + 5vw);
+    width: 30%;
+  }
+
+  .tsoi-hero img {
+    left: -5vw;
+    transform: translateX(0);
+    width: fit-content;
+    height: min(70vh, 980px);
+  }
+
+  .hero-cta {
+    position: relative;
+    height: 100vh;
+    width: min(50vw, 80rem);
+    left: 0;
+    gap: 3.2rem;
+    padding-left: min(10vw, 13.2rem);
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    background-image: none;
+  }
+
+  .event-info {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0;
+    padding: 0;
+  }
+
+  .date-wrapper {
+    gap: 0.4rem;
+    transform: rotate(0);
+    margin: 0;
+    padding-bottom: 3.2rem;
+  }
+
+  .date-line-1,
+  .date-line-2,
+  .date-line-3 {
+    text-align: left;
+  }
+
+  .date-line-1 {
+    font-size: 9.6rem;
+    line-height: 6rem;
+    min-width: 16rem;
+    text-align: left;
+  }
+
+  .date-line-2 {
+    font-size: 3.6rem;
+  }
+
+  .date-line-3 {
+    font-size: 2.4rem;
+    font-weight: 300;
+    line-height: 2.8rem;
+  }
+
+  .event-info-txt {
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+
+  .timeline {
+    height: 100vh;
+    padding: 6rem 0 0;
+    justify-content: center;
+  }
+
+  .timeslot h4 {
+    font-size: var(--fs-sm);
+    margin-bottom: 3.2rem;
+  }
+
+  .timeslot h4:nth-child(1)::before {
+    width: 80rem;
+    max-width: 70vw;
+    left: 50%;
+    height: 2px;
+    transform: translateX(-50%);
+  }
+
+  .slide-btn-wrapper {
+    display: none;
+  }
+
+  .schedule-card img {
+    margin: 0;
+    height: auto;
+    transform: none;
+    padding: 0 1rem;
+  }
+
+  .schedule-card img,
+  .schedule-txt {
+    width: 35rem;
+    max-width: 28vw;
+  }
+
+  .schedule-card {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 0;
+  }
+
+  .carousel {
+    overflow: visible;
+    width: 100%;
+  }
+
+  .carousel-track {
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    align-items: stretch;
+  }
+
+  .guest-slides {
+    justify-content: flex-start;
+    gap: 0 !important;
+  }
+
+  .carousel-slide {
+    min-width: 0;
+    max-width: none;
+    padding: 0;
+  }
+
+  .activity-time {
+    min-width: 5.2rem;
+  }
+
+  .activity-time,
+  .activity-title,
+  .timeslot h4 {
+    font-size: var(--fs-sm);
+  }
+
+  .activity-description {
+    font-size: 1.3rem;
+  }
+
+  .schedule-txt {
+    padding: 2.8rem 2rem;
+    border-radius: var(--card-border-radius);
+    height: 100%;
+    justify-content: center;
+  }
+
+  #partners,
+  #guests,
+  #contact {
+    padding: 12rem 0 6rem;
+    gap: 8rem;
+    height: 100vh;
+  }
+
+  #guests {
+    align-content: flex-end;
+  }
+
+  .guest-img-wrapper {
+    margin-left: 0;
+    transform: none;
+    position: relative;
+  }
+
+  .guest-img-wrapper img {
+    height: 60vh;
+    object-fit: cover;
+  }
+
+  .guest-carousel .slide-btn-wrapper,
+  .guest-txt {
+    max-width: 40vw;
+  }
+
+  .guest-card {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    gap: min(8rem, 2.5vw);
+    align-items: flex-end;
+  }
+
+  .guest-txt {
+    height: fit-content;
+    padding: 2.8rem 2rem;
+    border-radius: var(--card-border-radius);
+  }
+
+  .guest-card .title-wrapper {
+    display: flex;
+    gap: 0.4rem;
+  }
+
+  h4.guest-title {
+    font-size: var(--fs-md);
+    color: var(--colors-accent);
+  }
+
+  p.guest-description {
+    font-size: var(--fs-sm);
+    color: var(--colors-gray-200);
+  }
+
+  .guest-carousel {
+    position: relative;
+  }
+
+  .guest-slide {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    justify-content: center;
+  }
+
+  .guest-carousel .slide-btn-wrapper {
+    display: none;
+  }
+
+  .desktop-slide-btn-wrapper {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+
+    position: relative;
+    z-index: 10;
+  }
+
+  #lecturers,
+  #partners,
+  #contact {
+    justify-content: center;
+  }
+
+  .lecturer-card-wrapper {
+    padding: 3.2rem 0 0;
+    padding: 6rem 0 0;
+    max-width: 80vw;
+  }
+
+  .lecturer-card-wrapper .row {
+    flex-direction: row;
+  }
+
+  .lecturer-card-wrapper,
+  .lecturer-card-wrapper .row {
+    gap: 2rem;
+  }
+
+  .lecturer-card {
+    padding: 2rem 1.6rem;
+    gap: 1.6rem;
+    width: 50%;
+  }
+
+  .lecturer-card-header img {
+    width: 5.2rem;
+    height: 5.2rem;
+  }
+
+  h5.lecturerTitle {
+    padding-top: 0rem;
+    font-size: var(--fs-md);
+  }
+
+  .lecturer-card p {
+    font-size: var(--fs-sm);
+  }
+
+  .partners-wrapper {
+    gap: 3.6rem;
+    padding: 3.2rem 0;
+    flex-direction: row;
+    justify-content: center;
+    border-radius: var(--border-radius);
+  }
+
+  .partner-logo svg {
+    margin-left: 0;
+    transform: none;
+    width: 22rem;
+  }
+
+  .contact-wrapper {
+    color: var(--colors-gray-50);
+    gap: 3.2rem;
+  }
+
+  .partner-contact-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+  }
+
+  h4#partnerWithUs {
+    font-size: var(--fs-lg);
+  }
+
+  p#partnerWithUs {
+    font-size: var(--fs-md);
+    margin-bottom: 1.2rem;
+  }
+
+  .contact-wrapper {
+    padding: 0;
+    border: none;
+    border-radius: 0;
+    background-color: transparent;
+    width: 80vw;
+    flex-direction: row;
+  }
+
+  .contact-card {
+    width: 50%;
+    border-top: 1px solid var(--border-color);
+    background-color: var(--colors-card-bg);
+    padding: 2rem 2.4rem 4rem;
+    border-radius: var(--card-border-radius);
+  }
+
+  .qaos-contact-wrapper {
+    margin: 3.2rem 0 0;
+  }
+
+  ul.qaos-contacts,
+  ul.organizing-committee {
+    margin: 0.4rem 0 0 1.6rem;
+  }
+
+  ul.qaos-contacts li svg,
+  ul.organizing-committee li svg {
+    width: 1.6rem;
+  }
+
+  ul.qaos-contacts li a,
+  ul.organizing-committee li a {
+    font-size: var(--fs-md);
+    gap: 1.2rem;
+  }
+
+  .organizer-title h6 {
+    font-size: var(--fs-md);
+  }
+
+  p.attributions {
+    font-size: var(--fs-sm);
+  }
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-5%);
+  }
+
+  50% {
+    transform: translateY(15%);
+  }
+  100% {
+    transform: translateY(-5%);
+  }
+}
+
+.rotate {
+  transform-origin: 50% 50%;
+  will-change: transform;
+  animation: spin 20s linear infinite;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* faaaaaabulous gradients */
+@keyframes hero-gradient-animation {
+  0% {
+    --x-0: 0%;
+    --y-0: 99%;
+    --x-1: 93%;
+    --y-1: 95%;
+    --x-2: 46%;
+    --y-2: 94%;
+  }
+  100% {
+    --x-0: 19%;
+    --y-0: 15%;
+    --x-1: 16%;
+    --y-1: 13%;
+    --x-2: 56%;
+    --y-2: 43%;
+  }
+}
+
+@property --x-0 {
+  syntax: "<percentage>";
+  inherits: false;
+  initial-value: 0%;
+}
+@property --y-0 {
+  syntax: "<percentage>";
+  inherits: false;
+  initial-value: 99%;
+}
+@property --x-1 {
+  syntax: "<percentage>";
+  inherits: false;
+  initial-value: 93%;
+}
+@property --y-1 {
+  syntax: "<percentage>";
+  inherits: false;
+  initial-value: 95%;
+}
+@property --x-2 {
+  syntax: "<percentage>";
+  inherits: false;
+  initial-value: 46%;
+}
+@property --y-2 {
+  syntax: "<percentage>";
+  inherits: false;
+  initial-value: 94%;
+}
+
+#hero {
+  --c-0: hsla(11, 100%, 50%, 0.75);
+  --c-1: #000875;
+  --c-2: #ff008c;
+  --c-3: hsla(206, 100%, 9%, 0.02);
+
+  --s-start-0: 0%;
+  --s-end-0: 67%;
+  --s-start-1: 0%;
+  --s-end-1: 66%;
+  --s-start-2: 0%;
+  --s-end-2: 81%;
+  --s-start-3: 0%;
+  --s-end-3: 150%;
+
+  --x-0: 0%;
+  --y-0: 99%;
+  --x-1: 93%;
+  --y-1: 95%;
+  --x-2: 46%;
+  --y-2: 94%;
+  --x-3: 89%;
+  --y-3: 8%;
+
+  background-color: rgb(8, 40, 66);
+  background-image: url("/assets/noise-texture.jpg"),
+    radial-gradient(
+      circle at var(--x-0) var(--y-0),
+      var(--c-0) var(--s-start-0),
+      transparent var(--s-end-0)
+    ),
+    radial-gradient(
+      circle at var(--x-1) var(--y-1),
+      var(--c-1) var(--s-start-1),
+      transparent var(--s-end-1)
+    ),
+    radial-gradient(
+      circle at var(--x-2) var(--y-2),
+      var(--c-2) var(--s-start-2),
+      transparent var(--s-end-2)
+    ),
+    radial-gradient(
+      circle at var(--x-3) var(--y-3),
+      var(--c-3) var(--s-start-3),
+      transparent var(--s-end-3)
+    );
+  background-repeat: repeat;
+  background-blend-mode: overlay, normal, normal, normal, normal;
+  animation: hero-gradient-animation 17s ease-in-out infinite alternate-reverse;
+  will-change: background-position, background;
+}
+
+#lecturers,
+#schedule,
+#guests,
+#partners,
+#contact {
+  --cb-0: hsla(266, 1%, 12%, 1);
+  --cb-2: hsla(54, 0%, 0%, 0.49);
+  --cb-3: hsla(299, 4%, 36%, 1);
+
+  --sb-start-0: 9%;
+  --sb-end-0: 55%;
+  --sb-start-1: 5%;
+  --sb-end-1: 72%;
+  --sb-start-2: 5%;
+  --sb-end-2: 52%;
+  --sb-start-3: 13%;
+  --sb-end-3: 68%;
+
+  --xb-0: 85%;
+  --yb-0: 80%;
+  --xb-1: 60%;
+  --yb-1: 24%;
+  --xb-2: 13%;
+  --yb-2: 82%;
+  --xb-3: 24%;
+  --yb-3: 7%;
+
+  background-color: var(--colors-gray-950);
+  background-image: url("assets/noise-texture.jpg"),
+    radial-gradient(
+      circle at var(--xb-0) var(--yb-0),
+      var(--cb-0) var(--sb-start-0),
+      transparent var(--sb-end-0)
+    ),
+    radial-gradient(
+      circle at var(--xb-2) var(--yb-2),
+      var(--cb-2) var(--sb-start-2),
+      transparent var(--sb-end-2)
+    ),
+    radial-gradient(
+      circle at var(--xb-3) var(--yb-3),
+      var(--cb-3) var(--sb-start-3),
+      transparent var(--sb-end-3)
+    );
+  background-repeat: repeat;
+}
+
+#schedule,
+#guests,
+#contact {
+  background-blend-mode: multiply, normal, normal, normal;
+}
+
+#lecturers,
+#partners {
+  background-blend-mode: overlay, normal, normal, normal;
+}

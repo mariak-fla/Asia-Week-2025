@@ -1,0 +1,99 @@
+/* nav & footer */
+
+.nav-link {
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.nav {
+  top: 0;
+
+  background-image: linear-gradient(
+    to bottom,
+    var(--colors-gray-950) -10%,
+    transparent 100%
+  );
+
+  z-index: 9999;
+}
+
+.nav,
+.footer {
+  color: var(--colors-gray-50);
+  gap: 2.4rem;
+  padding: 1.6rem 2.4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 100vw;
+}
+
+.footer {
+  z-index: 99;
+  bottom: 0;
+
+  background-image: linear-gradient(
+    to top,
+    var(--colors-gray-950) -10%,
+    transparent 100%
+  );
+}
+
+.footer svg {
+  stroke: var(--colors-gray-400);
+  will-change: transform;
+  animation: bounce 1.5s infinite;
+  width: 2.4rem;
+}
+
+/* hamburger menu */
+.hamburger {
+  cursor: pointer;
+}
+
+.hamburger.active svg.lucide-menu-icon,
+.hamburger svg.lucide-x-icon {
+  display: none;
+}
+
+.hamburger svg.lucide-menu-icon,
+.hamburger.active svg.lucide-x-icon {
+  display: block;
+}
+
+/* ul inside nav */
+ul.menu {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  gap: 2rem;
+  left: -120%;
+  opacity: 0;
+  top: 0;
+
+  font-size: 2.4rem;
+
+  background-color: hsla(224, 71%, 4%, 75%);
+  backdrop-filter: var(--backdrop-bg);
+  width: 100vw;
+  text-align: center;
+  height: 100vh;
+
+  transition: all 0.2s ease-in-out;
+  z-index: -1;
+}
+
+ul.menu.active {
+  left: 0;
+  opacity: 1;
+  /* z-index: 1; */
+}
+
+ul.menu a {
+  color: var(--colors-gray-50);
+
+  transition: all 0.2s ease-in-out;
+}

@@ -1,0 +1,19 @@
+.partners-wrapper {
+  gap: 3.2rem;
+  width: 100%;
+}
+
+.partner-logo svg {
+  fill: var(--colors-gray-50);
+  margin-left: 40%;
+  transform: translateX(-30%);
+}
+
+h4#partnerWithUs {
+  font-size: var(--fs-lg);
+}
+
+p#partnerWithUs {
+  font-size: var(--fs-md);
+  margin-bottom: 1.2rem;
+}

@@ -1,0 +1,36 @@
+section {
+  background-position: center;
+}
+
+span.thin {
+  font-weight: 200;
+}
+
+main {
+  /* height: 100vh;
+  height: 100dvh; */
+  width: 100vw;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  scroll-snap-type: y mandatory;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+main::-webkit-scrollbar {
+  display: none;
+}
+
+section {
+  /* height: 100vh; */
+  height: 100dvh;
+  width: 100vw;
+  scroll-snap-align: start;
+  position: relative;
+}
+
+#guests,
+#partners,
+#contact {
+  gap: 3.2rem;
+}

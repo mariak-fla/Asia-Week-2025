@@ -1,0 +1,135 @@
+.timeline,
+#guests,
+#lecturers,
+#partners,
+#contact {
+  height: 100%;
+  width: 100vw;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding: 10vh 0 0;
+}
+
+.white-label,
+.black-label,
+.timeslot h4 {
+  padding: 0.4rem 1.6rem;
+  line-height: 50%;
+}
+
+.timeslot h4 {
+  background-color: var(--colors-accent);
+  font-size: 1.6rem;
+  font-weight: 400;
+  border-radius: 666px;
+  width: fit-content;
+  margin-bottom: 3.2rem;
+}
+
+.timeslot h4:nth-child(1)::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: 200vw;
+  height: 2px;
+  background: var(--colors-accent);
+  top: 0.65rem;
+  left: 50vw;
+}
+
+.white-label,
+.black-label {
+  font-weight: 700;
+  text-transform: uppercase;
+  width: fit-content;
+}
+
+.white-label {
+  color: var(--colors-gray-950);
+  background-color: var(--colors-gray-50);
+}
+
+.black-label {
+  color: var(--colors-gray-50);
+  background-color: var(--colors-gray-950);
+}
+
+a.location {
+  display: flex;
+  font-size: 1.2rem;
+  color: var(--colors-gray-400);
+  align-items: center;
+  gap: 0.8rem;
+  margin: 0.8rem 0 2rem;
+  transition: 150ms ease-in-out;
+}
+
+a.location:hover {
+  color: var(--colors-gray-200);
+}
+
+a.location svg {
+  width: 1.4rem;
+}
+
+.schedule-card img {
+  width: auto;
+  height: 22.5vh;
+  margin: 0 50%;
+  transform: translateX(-50%);
+}
+
+.schedule-txt,
+.guest-txt,
+.partners-wrapper,
+.contact-wrapper {
+  padding: 2.8rem 2rem 50vh;
+  border-top: 1px solid var(--border-color);
+  border-radius: var(--card-border-radius) var(--card-border-radius) 0 0;
+  width: 100vw;
+  background-color: var(--colors-card-bg);
+  display: flex;
+  flex-direction: column;
+}
+
+.schedule-txt {
+  gap: 1rem;
+  padding: 2.8rem 2rem 50vh;
+}
+
+.activity-wrapper {
+  display: flex;
+  gap: 1.6rem;
+}
+
+.activity-time {
+  text-transform: uppercase;
+  font-weight: 500;
+  color: var(--colors-accent);
+  min-width: 6rem;
+  text-align: left;
+}
+
+.activity-time,
+.activity-title {
+  font-size: var(--fs-md);
+}
+
+.activity-title {
+  font-weight: normal;
+}
+
+.activity {
+  color: var(--colors-gray-50);
+}
+
+.activity-description {
+  margin-top: 0.4rem;
+  font-size: 1.4rem;
+}
+
+.activity-title.break {
+  color: var(--colors-gray-500);
+  font-weight: 600;
+}

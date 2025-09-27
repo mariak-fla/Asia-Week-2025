@@ -1,12 +1,24 @@
-
 $(function () {
-  $("#navbar").load("navbar.html");
-  $("#footer").load("footer.html");
-  setMainHeight();
-  initCarousel(".schedule-carousel");
-  initCarousel(".guest-carousel");
-});
+  $("#navbar").load("partials/navbar.html");
 
+  $("#footer").load("partials/footer.html");
+
+  $("#schedule").load("partials/schedule.html", function () {
+    initCarousel(".schedule-carousel");
+  });
+
+  $("#lecturers").load("partials/lecturers.html");
+
+  $("#guests").load("partials/guests.html", function () {
+    initCarousel(".guest-carousel");
+  });
+
+  $("#partners").load("partials/partners.html");
+
+  $("#contact").load("partials/contact.html");
+
+  setMainHeight();
+});
 
 function setMainHeight() {
   const main = document.querySelector("main");
@@ -16,7 +28,6 @@ function setMainHeight() {
 }
 window.addEventListener("resize", setMainHeight);
 document.addEventListener("DOMContentLoaded", setMainHeight);
-
 
 // Language toggle
 let translations = {};
@@ -57,7 +68,6 @@ function updateLanguage() {
   });
 }
 
-
 // Carousel Logic
 function initCarousel(carouselSelector) {
   const $carousel = $(carouselSelector);
@@ -81,6 +91,7 @@ function initCarousel(carouselSelector) {
   $prev.on("click", function (e) {
     e.preventDefault();
     current = (current - 1 + total) % total;
+    console.log(current);
     updateCarousel();
   });
   $next.on("click", function (e) {
