@@ -34,6 +34,18 @@
   --drawer-border-radius: 16px;
 }
 
+/* Very Tiny Mobile */
+@media screen and (max-height: 700px) {
+  :root {
+    --fs-cta: 1.4rem;
+    --fs-lg: 2.4rem;
+    --fs-md: 1.6rem;
+    --fs-sm: 1.4rem;
+    --fs-xs: 1.3rem;
+  }
+}
+
+/* Desktop */
 @media screen and (min-width: 1025px) {
   :root {
     --fs-cta: 1.6rem;

@@ -68,8 +68,6 @@ button {
 }
 
 .btn {
-  padding: 1.6rem 0;
-  font-size: var(--fs-lg);
   background-color: var(--colors-accent);
   color: var(--colors-gray-50);
   border-radius: var(--border-radius);
@@ -171,4 +169,11 @@ button {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+/* Very Tiny Mobile */
+@media screen and (max-height: 700px) {
+  .btn {
+    padding: .8rem 0;
+  }
 }
