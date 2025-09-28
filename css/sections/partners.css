@@ -1,12 +1,13 @@
 .partners-wrapper {
-  gap: 3.2rem;
+  gap: 2rem;
   width: 100%;
 }
 
 .partner-logo svg {
   fill: var(--colors-gray-50);
-  margin-left: 40%;
-  transform: translateX(-30%);
+  margin-left: 50%;
+  transform: translateX(-50%);
+  width: 18rem;
 }
 
 h4#partnerWithUs {
@@ -16,4 +17,28 @@ h4#partnerWithUs {
 p#partnerWithUs {
   font-size: var(--fs-md);
   margin-bottom: 1.2rem;
+}
+
+/* Very Tiny Mobile */
+@media screen and (max-height: 700px) {
+  .partner-logo svg {
+    width: 15rem;
+  }
+}
+
+/* Desktop */
+@media screen and (min-width: 1025px) {
+  .partners-wrapper {
+    gap: 3.6rem;
+    padding: 3.2rem 0;
+    flex-direction: row;
+    justify-content: center;
+    border-radius: var(--border-radius);
+  }
+
+  .partner-logo svg {
+    margin-left: 0;
+    transform: none;
+    width: 22rem;
+  }
 }

@@ -7,13 +7,11 @@
 
 .nav {
   top: 0;
-
   background-image: linear-gradient(
     to bottom,
     var(--colors-gray-950) -10%,
     transparent 100%
   );
-
   z-index: 9999;
 }
 
@@ -98,6 +96,26 @@ ul.menu a {
   transition: all 0.2s ease-in-out;
 }
 
+/* Very Tiny Mobile */
+@media screen and (max-height: 700px) {
+  .nav,
+  .footer {
+    gap: 2rem;
+    padding: 1.2rem 2rem;
+  }
+
+  .footer svg,
+  svg.lucide-menu-icon,
+  svg.lucide-x-icon {
+    width: 2rem;
+  }
+
+  ul.menu {
+    font-size: var(--fs-md);
+  }
+}
+
+/* Desktop */
 @media screen and (min-width: 1025px) {
   .nav,
   .footer {

@@ -24,10 +24,10 @@
   position: absolute;
   background-image: url("assets/lang-badge.png");
   background-size: cover;
-  height: 10rem;
-  width: 10rem;
-  bottom: 7.5vh;
-  left: 3.2rem;
+  height: 12rem;
+  width: 12rem;
+  bottom: 9vh;
+  left: 1.6rem;
   z-index: 4;
 }
 
@@ -35,7 +35,7 @@
   position: absolute;
   top: 0;
   right: 25%;
-  width: 30%; /* proportion of Tsoi's width */
+  width: 30%;
   aspect-ratio: 1 / 1;
   z-index: 2;
   pointer-events: none;
@@ -78,7 +78,7 @@
     transparent 0%,
     var(--colors-gray-950) 22.5%
   );
-  padding: 5.2rem 2rem 7.2rem;
+  padding: 5.2rem 2rem 5.2rem;
   color: var(--colors-gray-50);
   position: absolute;
   bottom: 0;
@@ -92,7 +92,7 @@
   display: grid;
   grid-template-columns: auto 1fr;
   align-items: flex-start;
-  gap: 3.6rem;
+  gap: 3.2rem;
   padding: 0 2rem;
 }
 
@@ -171,14 +171,10 @@ a.btn.contact-us svg {
   flex-grow: 2;
 }
 
-/* TODO: ???? used? */
 .event-info-txt .title,
 .event-info-txt .subtitle,
-#scheduleTitle,
-#guestTitle,
-#lecturersTitle,
-#partnersTitle,
-#contactTitle {
+h3.white-label,
+h3.black-label {
   font-size: var(--fs-lg);
 }
 
@@ -194,10 +190,14 @@ a.btn.contact-us svg {
     margin: auto;
   }
 
+  .tsoi-hero::before {
+    bottom: 7.5vh;
+  }
+
   .donut-stack {
-    top: -4%;
-    right: 27.5%;
-    width: 22.5%;
+    top: -8%;
+    right: 30%;
+    width: 25%;
   }
 
   .hero-cta {
@@ -220,23 +220,22 @@ a.btn.contact-us svg {
     font-size: var(--fs-sm);
   }
 
+  .event-info-txt .title,
+  .event-info-txt .subtitle,
+  h3.white-label,
+  h3.black-label {
+    font-size: var(--fs-md);
+  }
+
   .slide-btn {
     width: 3rem;
     height: 3rem;
   }
 
   .slide-btn-wrapper {
-    bottom: 63vh;
+    bottom: calc(50% + 10vh);
     width: 90vw;
     left: 5vw;
-  }
-
-  .schedule-card img {
-    max-height: 20vh;
-    width: auto;
-    object-fit: cover;
-    margin: 0 50%;
-    transform: translateX(-50%);
   }
 }
 
@@ -411,46 +410,8 @@ a.btn.contact-us svg {
     gap: 0.8rem;
   }
 
-  .timeline {
-    height: 100vh;
-    padding: 6rem 0 0;
-    justify-content: center;
-  }
-
-  .timeslot h4 {
-    font-size: var(--fs-sm);
-    margin-bottom: 3.2rem;
-  }
-
-  .timeslot h4:nth-child(1)::before {
-    width: 80rem;
-    max-width: 70vw;
-    left: 50%;
-    height: 2px;
-    transform: translateX(-50%);
-  }
-
   .slide-btn-wrapper {
     display: none;
-  }
-
-  .schedule-card img {
-    margin: 0;
-    height: auto;
-    transform: none;
-    padding: 0 1rem;
-  }
-
-  .schedule-card img,
-  .schedule-txt {
-    width: 35rem;
-    max-width: 28vw;
-  }
-
-  .schedule-card {
-    display: flex;
-    flex-direction: column;
-    flex: 1 1 0;
   }
 
   .carousel {
@@ -476,97 +437,12 @@ a.btn.contact-us svg {
     padding: 0;
   }
 
-  .activity-time {
-    min-width: 5.2rem;
-  }
-
-  .activity-time,
-  .activity-title,
-  .timeslot h4 {
-    font-size: var(--fs-sm);
-  }
-
-  .activity-description {
-    font-size: 1.3rem;
-  }
-
-  .schedule-txt {
-    padding: 2.8rem 2rem;
-    border-radius: var(--card-border-radius);
-    height: 100%;
-    justify-content: center;
-  }
-
   #partners,
   #guests,
   #contact {
     padding: 12rem 0 6rem;
     gap: 8rem;
     height: 100vh;
-  }
-
-  #guests {
-    align-content: flex-end;
-  }
-
-  .guest-img-wrapper {
-    margin-left: 0;
-    transform: none;
-    position: relative;
-  }
-
-  .guest-img-wrapper img {
-    height: 60vh;
-    object-fit: cover;
-  }
-
-  .guest-carousel .slide-btn-wrapper,
-  .guest-txt {
-    max-width: 40vw;
-  }
-
-  .guest-card {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: center;
-    gap: min(8rem, 2.5vw);
-    align-items: flex-end;
-  }
-
-  .guest-txt {
-    height: fit-content;
-    padding: 2.8rem 2rem;
-    border-radius: var(--card-border-radius);
-  }
-
-  .guest-card .title-wrapper {
-    display: flex;
-    gap: 0.4rem;
-  }
-
-  h4.guest-title {
-    font-size: var(--fs-md);
-    color: var(--colors-accent);
-  }
-
-  p.guest-description {
-    font-size: var(--fs-sm);
-    color: var(--colors-gray-200);
-  }
-
-  .guest-carousel {
-    position: relative;
-  }
-
-  .guest-slide {
-    display: flex;
-    flex-direction: row;
-    width: 100vw;
-    justify-content: center;
-  }
-
-  .guest-carousel .slide-btn-wrapper {
-    display: none;
   }
 
   .desktop-slide-btn-wrapper {
@@ -582,120 +458,6 @@ a.btn.contact-us svg {
   #partners,
   #contact {
     justify-content: center;
-  }
-
-  .lecturer-card-wrapper {
-    padding: 3.2rem 0 0;
-    padding: 6rem 0 0;
-    max-width: 80vw;
-  }
-
-  .lecturer-card-wrapper .row {
-    flex-direction: row;
-  }
-
-  .lecturer-card-wrapper,
-  .lecturer-card-wrapper .row {
-    gap: 2rem;
-  }
-
-  .lecturer-card {
-    padding: 2rem 1.6rem;
-    gap: 1.6rem;
-    width: 50%;
-  }
-
-  .lecturer-card-header img {
-    width: 5.2rem;
-    height: 5.2rem;
-  }
-
-  h5.lecturerTitle {
-    padding-top: 0rem;
-    font-size: var(--fs-md);
-  }
-
-  .lecturer-card p {
-    font-size: var(--fs-sm);
-  }
-
-  .partners-wrapper {
-    gap: 3.6rem;
-    padding: 3.2rem 0;
-    flex-direction: row;
-    justify-content: center;
-    border-radius: var(--border-radius);
-  }
-
-  .partner-logo svg {
-    margin-left: 0;
-    transform: none;
-    width: 22rem;
-  }
-
-  .contact-wrapper {
-    color: var(--colors-gray-50);
-    gap: 3.2rem;
-  }
-
-  .partner-contact-wrapper {
-    display: flex;
-    flex-direction: column;
-    gap: 0.4rem;
-  }
-
-  h4#partnerWithUs {
-    font-size: var(--fs-lg);
-  }
-
-  p#partnerWithUs {
-    font-size: var(--fs-md);
-    margin-bottom: 1.2rem;
-  }
-
-  .contact-wrapper {
-    padding: 0;
-    border: none;
-    border-radius: 0;
-    background-color: transparent;
-    width: 80vw;
-    flex-direction: row;
-  }
-
-  .contact-card {
-    width: 50%;
-    border-top: 1px solid var(--border-color);
-    background-color: var(--colors-card-bg);
-    padding: 2rem 2.4rem 4rem;
-    border-radius: var(--card-border-radius);
-  }
-
-  .qaos-contact-wrapper {
-    margin: 3.2rem 0 0;
-  }
-
-  ul.qaos-contacts,
-  ul.organizing-committee {
-    margin: 0.4rem 0 0 1.6rem;
-  }
-
-  ul.qaos-contacts li svg,
-  ul.organizing-committee li svg {
-    width: 1.6rem;
-  }
-
-  ul.qaos-contacts li a,
-  ul.organizing-committee li a {
-    font-size: var(--fs-md);
-    gap: 1.2rem;
-  }
-
-  .organizer-title h6 {
-    font-size: var(--fs-md);
-  }
-
-  p.attributions {
-    font-size: var(--fs-sm);
   }
 }
 

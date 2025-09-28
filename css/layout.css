@@ -34,3 +34,33 @@ section {
 #contact {
   gap: 3.2rem;
 }
+
+.timeline,
+#guests,
+#lecturers,
+#partners,
+#contact {
+  height: 100dvh;
+  width: 100vw;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding: 10vh 0 0;
+}
+
+/* Very Tiny Mobile */
+@media screen and (max-height: 700px) {
+  #guests,
+  #partners,
+  #contact {
+    gap: 2rem;
+  }
+
+  .timeline,
+  #guests,
+  #lecturers,
+  #partners,
+  #contact {
+    padding: 8dvh 0 0;
+  }
+}

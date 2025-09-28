@@ -10,7 +10,7 @@
   --card-shadow: 0 4px 4px hsla(224, 71%, 4%, 25%),
     inset 0 4px 4px hsla(224, 71%, 4%, 25%);
 
-  --colors-card-bg: hsla(224, 71%, 4%, 50%);
+  --colors-card-bg: hsla(224, 71%, 4%, 60%);
   --colors-accent-light: #d14747;
   --colors-accent: #b91c1c;
   --colors-accent-dark: #991b1b;
@@ -34,11 +34,21 @@
   --drawer-border-radius: 16px;
 }
 
+.white-label {
+  color: var(--colors-gray-950);
+  background-color: var(--colors-gray-50);
+}
+
+.black-label {
+  color: var(--colors-gray-50);
+  background-color: var(--colors-gray-950);
+}
+
 /* Very Tiny Mobile */
 @media screen and (max-height: 700px) {
   :root {
     --fs-cta: 1.4rem;
-    --fs-lg: 2.4rem;
+    --fs-lg: 2rem;
     --fs-md: 1.6rem;
     --fs-sm: 1.4rem;
     --fs-xs: 1.3rem;

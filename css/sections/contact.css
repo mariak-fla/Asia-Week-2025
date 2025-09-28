@@ -1,6 +1,13 @@
 .contact-wrapper {
   color: var(--colors-gray-50);
   gap: 3.2rem;
+  padding: 2.8rem 2rem 50vh;
+}
+
+.contact-wrapper {
+  background-color: var(--colors-card-bg);
+  display: flex;
+  flex-direction: column;
 }
 
 .partner-contact-wrapper {
@@ -57,4 +64,72 @@ p.attributions {
 a.organizer-contact {
   margin-top: 0.4rem;
   margin-bottom: 1.6rem;
+}
+
+/* Desktop */
+@media screen and (min-width: 1025px) {
+  .contact-wrapper {
+    color: var(--colors-gray-50);
+    gap: 3.2rem;
+  }
+
+  .partner-contact-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+  }
+
+  h4#partnerWithUs {
+    font-size: var(--fs-lg);
+  }
+
+  p#partnerWithUs {
+    font-size: var(--fs-md);
+    margin-bottom: 1.2rem;
+  }
+
+  .contact-wrapper {
+    padding: 0;
+    border: none;
+    border-radius: 0;
+    background-color: transparent;
+    width: 80vw;
+    flex-direction: row;
+  }
+
+  .contact-card {
+    width: 50%;
+    border-top: 1px solid var(--border-color);
+    background-color: var(--colors-card-bg);
+    padding: 2rem 2.4rem 4rem;
+    border-radius: var(--card-border-radius);
+  }
+
+  .qaos-contact-wrapper {
+    margin: 3.2rem 0 0;
+  }
+
+  ul.qaos-contacts,
+  ul.organizing-committee {
+    margin: 0.4rem 0 0 1.6rem;
+  }
+
+  ul.qaos-contacts li svg,
+  ul.organizing-committee li svg {
+    width: 1.6rem;
+  }
+
+  ul.qaos-contacts li a,
+  ul.organizing-committee li a {
+    font-size: var(--fs-md);
+    gap: 1.2rem;
+  }
+
+  .organizer-title h6 {
+    font-size: var(--fs-md);
+  }
+
+  p.attributions {
+    font-size: var(--fs-sm);
+  }
 }

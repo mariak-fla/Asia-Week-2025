@@ -44,10 +44,87 @@ h5.lecturerTitle {
   padding-top: 0.2rem;
   font-size: var(--fs-sm);
   font-weight: 500;
-  color: var(--colors-accent-light);
+  color: var(--colors-accent);
 }
 
 .lecturer-card p {
   color: var(--colors-gray-200);
   font-size: var(--fs-xs);
+}
+
+/* Very Tiny Mobile */
+@media screen and (max-height: 700px) {
+  .lecturer-card-wrapper {
+    padding: 2vh 0.8rem 0;
+  }
+
+  .lecturer-card-wrapper,
+  .lecturer-card-wrapper .row {
+    gap: 0.8rem;
+  }
+
+  .lecturer-card {
+    gap: 0.6rem;
+  }
+
+  h4.lecturerName {
+    font-size: var(--fs-md);
+    font-weight: 300;
+  }
+
+  h5.lecturerTitle {
+    padding-top: 0;
+    font-size: 1.2rem;
+  }
+
+  .lecturer-card p {
+    font-size: var(--fs-xs);
+  }
+
+  .lecturer-card-header img {
+    width: 3.2rem;
+    height: 3.2rem;
+  }
+
+  .lecturer-card-header {
+    gap: 1.2rem;
+  }
+}
+
+/* Desktop */
+@media screen and (min-width: 1025px) {
+  .lecturer-card-wrapper {
+    padding: 3.2rem 0 0;
+    padding: 6rem 0 0;
+    max-width: 80vw;
+  }
+
+  .lecturer-card-wrapper .row {
+    flex-direction: row;
+  }
+
+  .lecturer-card-wrapper,
+  .lecturer-card-wrapper .row {
+    gap: 2rem;
+  }
+
+  .lecturer-card {
+    padding: 2rem 1.6rem;
+    gap: 1.6rem;
+    width: 50%;
+  }
+
+  .lecturer-card-header img {
+    width: 5.2rem;
+    height: 5.2rem;
+  }
+
+  h5.lecturerTitle {
+    padding-top: 0rem;
+    font-size: var(--fs-md);
+  }
+
+  .lecturer-card p {
+    font-size: var(--fs-sm);
+  }
 }
