@@ -5,16 +5,20 @@
 
 .tsoi-hero {
   position: relative;
-  display: block;
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
   bottom: -7.5vh;
+  padding: 0 4.8rem;
 }
 
 .tsoi-hero img {
-  width: 75%;
-  left: 50%;
-  transform: translateX(-50%);
-  height: fit-content;
-  min-height: 100%;
+  /* width: 75%; */
+  width: 100%;
+  height: auto;
+  /* left: 50%; */
+  /* transform: translateX(-50%); */
+  /* height: fit-content; */
   position: relative;
   z-index: 3;
 }
@@ -286,61 +290,8 @@ a.btn.contact-us svg {
 
 /* Desktop */
 @media screen and (min-width: 1025px) {
-  :root {
-    --fs-cta: 1.6rem;
-    --fs-lg: 2.4rem;
-    --fs-md: 1.6rem;
-    --fs-sm: 1.4rem;
-    --fs-xs: 1.3rem;
-  }
-
-  .nav,
-  .footer {
-    gap: 4rem;
-  }
-
-  .nav {
-    padding: 2rem max(5vw, 5rem) 1.6rem;
-  }
-
-  .footer {
-    padding: 1.6rem max(5vw, 5rem);
-  }
-
-  .hamburger {
-    display: none;
-  }
-
-  .footer svg {
-    width: 2rem;
-  }
-
   .btn {
     padding: 1.2rem 0;
-  }
-
-  ul.menu {
-    flex-direction: row;
-    gap: 3.2rem;
-
-    font-size: 1.6rem;
-
-    position: relative;
-    opacity: 1;
-
-    width: fit-content;
-    height: fit-content;
-
-    top: 0;
-    left: 0;
-
-    background: none;
-    backdrop-filter: none;
-    z-index: 99;
-  }
-
-  ul.menu a:hover {
-    color: var(--colors-gray-400);
   }
 
   .hero-wrapper {
@@ -350,7 +301,7 @@ a.btn.contact-us svg {
     flex-direction: row-reverse;
     align-items: flex-end;
     justify-content: center;
-    gap: max(5vw, 20rem);
+    gap: 0;
     padding: 0 max(5vw, 5rem);
     background-image: radial-gradient(
         circle at 20% -30%,
@@ -369,34 +320,32 @@ a.btn.contact-us svg {
   .tsoi-hero {
     position: relative;
     bottom: 0;
+    width: 50%;
     display: flex;
     align-items: flex-end;
     justify-content: center;
+    padding: 0 min(10rem, 10vw) 0;
   }
 
   .donut-stack {
-    top: -2.5%;
-    right: calc(30% + 7.5vw);
-    width: 30%;
+    top: -5%;
+    right: 30%;
+    width: 25%;
   }
 
   .tsoi-hero img {
-    left: -10vw;
-    transform: translateX(0);
-    width: min(45rem, 30vw);
-    /* min-width: 100%; */
-    /* height: 900px; */
-    /* height: min(70vh, 980px); */
+    width: 90%;
+    max-width: 50rem;
+    height: auto;
   }
 
   .hero-cta {
     position: relative;
-    height: 100vh;
-    width: min(50vw, 80rem);
+    height: 100%;
+    width: 50%;
     left: 0;
     gap: 3.2rem;
-    padding-left: min(10vw, 13.2rem);
-    padding-right: max(3vw, 2.5rem);
+    padding: 0 min(5rem, 5vw) 7.2rem min(10vw, 13.2rem);
     display: flex;
     flex-direction: column;
     justify-content: end;
@@ -798,7 +747,7 @@ a.btn.contact-us svg {
   inherits: false;
   initial-value: 95%;
 }
-@property --x-2 {
+/* @property --x-2 {
   syntax: "<percentage>";
   inherits: false;
   initial-value: 46%;
@@ -807,20 +756,20 @@ a.btn.contact-us svg {
   syntax: "<percentage>";
   inherits: false;
   initial-value: 94%;
-}
+} */
 
 #hero {
   --c-0: hsla(11, 100%, 50%, 0.75);
   --c-1: #000875;
-  --c-2: #ff008c;
+  /* --c-2: hsla(327, 100%, 50%, 0.5); */
   --c-3: hsla(206, 100%, 9%, 0.02);
 
   --s-start-0: 0%;
   --s-end-0: 67%;
   --s-start-1: 0%;
   --s-end-1: 66%;
-  --s-start-2: 0%;
-  --s-end-2: 81%;
+  /* --s-start-2: 0%;
+  --s-end-2: 81%; */
   --s-start-3: 0%;
   --s-end-3: 150%;
 
@@ -828,12 +777,11 @@ a.btn.contact-us svg {
   --y-0: 99%;
   --x-1: 93%;
   --y-1: 95%;
-  --x-2: 46%;
-  --y-2: 94%;
+  /* --x-2: 46%;
+  --y-2: 94%; */
   --x-3: 89%;
   --y-3: 8%;
 
-  background-color: rgb(8, 40, 66);
   background-image: radial-gradient(
       circle at var(--x-0) var(--y-0),
       var(--c-0) var(--s-start-0),
@@ -844,11 +792,11 @@ a.btn.contact-us svg {
       var(--c-1) var(--s-start-1),
       transparent var(--s-end-1)
     ),
-    radial-gradient(
+    /* radial-gradient(
       circle at var(--x-2) var(--y-2),
       var(--c-2) var(--s-start-2),
       transparent var(--s-end-2)
-    ),
+    ), */
     radial-gradient(
       circle at var(--x-3) var(--y-3),
       var(--c-3) var(--s-start-3),
@@ -910,14 +858,12 @@ a.btn.contact-us svg {
 }
 
 #schedule,
-/* #guests, */
 #lecturers,
 #contact {
   background-blend-mode: multiply, normal, normal, normal;
 }
 
 #guests,
-/* #lecturers, */
 #partners {
   background-blend-mode: overlay, normal, normal, normal;
 }
