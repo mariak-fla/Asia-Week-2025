@@ -28,7 +28,7 @@
   width: 12rem;
   bottom: 9vh;
   left: 1.6rem;
-  z-index: 4;
+  z-index: 5;
 }
 
 .donut-stack {
@@ -191,7 +191,7 @@ h3.black-label {
   }
 
   .tsoi-hero::before {
-    bottom: 7.5vh;
+    bottom: 9.5vh;
   }
 
   .donut-stack {
@@ -233,7 +233,7 @@ h3.black-label {
   }
 
   .slide-btn-wrapper {
-    bottom: calc(50% + 10vh);
+    bottom: calc(50% + 15vh);
     width: 90vw;
     left: 5vw;
   }
@@ -579,34 +579,18 @@ h3.black-label {
   will-change: background-position, background;
 }
 
-section:not(#hero)::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: url("assets/noise-texture.jpg"),
-    url("assets/gradient-sections.jpg");
-  background-size: auto, cover;
-  background-position: right;
-  background-repeat: repeat, no-repeat;
-  background-blend-mode: multiply, normal;
-  z-index: -1;
-}
-
-#guests::before,
-#partners::before {
-  transform: rotate(180deg) scaleX(-1);
+section:not(#hero) {
+  background-size: cover;
+  background-position: center right;
 }
 
 #schedule,
 #lecturers,
 #contact {
-  background-color: hsla(224, 71%, 4%, 0.5);
+  background-image: url("assets/gradient-sections-odd.jpg");
 }
 
 #guests,
 #partners {
-  background-color: hsla(224, 71%, 4%, 0.25);
+  background-image: url("assets/gradient-sections-even.jpg");
 }

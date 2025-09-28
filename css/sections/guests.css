@@ -25,6 +25,7 @@
 h3.guest-name {
   color: var(--colors-gray-50);
   font-size: var(--fs-xl);
+  font-weight: 300;
 }
 
 h4.guest-title {
@@ -44,15 +45,11 @@ p.guest-description {
 /* Very Tiny Mobile */
 @media screen and (max-height: 700px) {
   .guest-carousel .slide-btn-wrapper {
-    bottom: calc(50% + 20vh);
+    bottom: calc(50% + 17.5vh);
   }
 
   .guest-img-wrapper {
-    transform: translateX(-50%);
-  }
-
-  .guest-img-wrapper img {
-    height: 40vh;
+    transform: translateX(-60%);
   }
 
   h3.guest-name {

@@ -110,6 +110,7 @@ a.location svg {
   font-weight: 600;
 }
 
+/* Very Tiny Mobile */
 @media screen and (max-height: 700px) {
   .schedule-card img {
     max-height: 20vh;
@@ -120,6 +121,7 @@ a.location svg {
   }
 }
 
+/* Desktop */
 @media screen and (min-width: 1025px) {
   .timeline {
     height: 100vh;

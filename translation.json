@@ -84,6 +84,12 @@
   },
   { "key": "professor_en", "value": "Professor" },
   { "key": "professor_jp", "value": "Professor" },
-  { "key": "activityTitle7_en", "value": "Viktor Tsoi in South Korea" },
-  { "key": "activityTitle7_jp", "value": "Viktor Tsoi in South Korea" }
+  {
+    "key": "activityTitle7_en",
+    "value": "<span class=\"bold\"> Viktor Tsoi:</span> Connecting Russia, Japan, Korea, and Brazil"
+  },
+  {
+    "key": "activityTitle7_jp",
+    "value": "<span class=\"bold\"> Viktor Tsoi:</span> Connecting Russia, Japan, Korea, and Brazil"
+  }
 ]
