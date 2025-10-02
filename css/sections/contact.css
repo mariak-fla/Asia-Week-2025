@@ -66,6 +66,15 @@ a.organizer-contact {
   margin-bottom: 1.6rem;
 }
 
+h4#partnerWithUs {
+  font-size: var(--fs-lg);
+}
+
+p#partnerWithUs {
+  font-size: var(--fs-md);
+  margin-bottom: 1.2rem;
+}
+
 /* Desktop */
 @media screen and (min-width: 1025px) {
   .contact-wrapper {
