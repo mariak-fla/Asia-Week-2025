@@ -8,7 +8,7 @@
   display: flex;
   align-items: flex-start;
   width: 100%;
-  bottom: -7.5vh;
+  bottom: -12vh;
   padding: 0 4.8rem;
 }
 
@@ -22,7 +22,7 @@
 .tsoi-hero::before {
   content: "";
   position: absolute;
-  background-image: url("assets/lang-badge.png");
+  background-image: url("assets/lang-badge.webp");
   background-size: cover;
   height: 12rem;
   width: 12rem;
@@ -92,21 +92,28 @@
   display: grid;
   grid-template-columns: auto 1fr;
   align-items: flex-start;
-  gap: 3.2rem;
-  padding: 0 2rem;
+  gap: 2.8rem;
+  padding: 0 1.6rem;
 }
 
 .event-info-txt h1.title {
   font-weight: 600;
+  font-size: var(--fs-lg);
 }
 
 .event-info-txt h2.subtitle {
-  font-weight: normal;
-  font-style: italic;
+  font-weight: 500;
+  font-size: var(--fs-md);
 }
 
-.event-info-txt .description {
-  font-size: var(--fs-md);
+p#address {
+  font-size: 1.2rem;
+  padding-bottom: 0.4rem;
+  color: var(--colors-gray-400);
+}
+
+p#heroDescription {
+  font-size: var(--fs-sm);
 }
 
 .date-wrapper {
@@ -149,6 +156,7 @@
   width: 6rem;
 }
 
+a.btn.maps,
 a.btn.sign-up,
 a.btn.contact-us {
   width: 100%;
@@ -159,6 +167,7 @@ a.btn.contact-us {
   font-size: var(--fs-cta);
 }
 
+a.btn.maps svg,
 a.btn.sign-up svg,
 a.btn.contact-us svg {
   width: var(--fs-cta);
@@ -171,17 +180,21 @@ a.btn.contact-us svg {
   flex-grow: 2;
 }
 
-.event-info-txt .title,
-.event-info-txt .subtitle,
 h3.white-label,
 h3.black-label {
   font-size: var(--fs-lg);
 }
 
+.hero-btn-wrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.8rem;
+}
+
 /* Very Tiny Mobile */
 @media screen and (max-height: 700px) {
   .tsoi-hero {
-    bottom: -10vh;
+    bottom: -8vh;
   }
 
   .tsoi-hero img {
@@ -201,12 +214,12 @@ h3.black-label {
   }
 
   .hero-cta {
-    padding: 5.6rem 1.6rem 5.6rem;
-    gap: 2rem;
+    padding: 5.6rem 1.6rem 4.4rem;
+    gap: 1.6rem;
   }
 
-  .event-info-txt .title,
-  .event-info-txt .subtitle {
+  .event-info-txt h1.title,
+  .event-info-txt h2.subtitle {
     font-size: var(--fs-md);
   }
 
@@ -408,6 +421,21 @@ h3.black-label {
   .event-info-txt {
     flex-direction: column;
     gap: 0.8rem;
+  }
+
+  .event-info-txt h2.subtitle {
+    font-size: 2rem;
+  }
+
+  p#address {
+    font-size: var(--fs-md);
+    padding-bottom: 0.4rem;
+    color: var(--colors-gray-400);
+  }
+
+  p#heroDescription {
+    font-size: var(--fs-md);
+    text-align: justify;
   }
 
   .slide-btn-wrapper {

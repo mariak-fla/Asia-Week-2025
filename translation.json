@@ -1,13 +1,13 @@
 [
   { "key": "mainTitle_en", "value": "Soviet Film:" },
-  { "key": "mainTitle_jp", "value": "JP TITLE JP TITLE:" },
+  { "key": "mainTitle_jp", "value": "ソビエト映画:" },
   {
     "key": "mainSubtitle_en",
-    "value": "Establishing Connections Among Asia Through Viktor Tsoi's Work"
+    "value": "Connecting Asia Through the Work of Viktor Tsoi"
   },
   {
     "key": "mainSubtitle_jp",
-    "value": "JP SUBTITLE JP SUBTITLE JP SUBTITLE JP SUBTITLE JP SUBTITLE JP SUBTITLE"
+    "value": "ヴィクトルツォイを通して築くアジアのつながり"
   },
   {
     "key": "heroDescription_en",
@@ -23,6 +23,8 @@
   { "key": "dateLine2_jp", "value": "11月" },
   { "key": "dateLine3_en", "value": "1-6PM" },
   { "key": "dateLine3_jp", "value": "1-6PM" },
+  { "key": "maps_en", "value": "View Map" },
+  { "key": "maps_jp", "value": "地図" },
   { "key": "signUp_en", "value": "Sign Up" },
   { "key": "signUp_jp", "value": "申し込む" },
   { "key": "scheduleTitle_en", "value": "schedule" },
