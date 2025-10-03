@@ -1,13 +1,9 @@
 .contact-wrapper {
   color: var(--colors-gray-50);
-  gap: 3.2rem;
-  padding: 2.8rem 2rem 50vh;
-}
-
-.contact-wrapper {
-  background-color: var(--colors-card-bg);
+  gap: 0.8rem;
   display: flex;
   flex-direction: column;
+  width: 100vw;
 }
 
 .partner-contact-wrapper {
@@ -16,28 +12,53 @@
   gap: 0.4rem;
 }
 
-.qaos-contact-wrapper {
-  margin: 3.2rem 0 1.6rem;
+.contact-card img {
+  width: 80%;
+  height: auto;
+  margin: auto;
 }
 
-h5#forUpcomingEvents,
-h5#organizingCommittee {
-  color: var(--colors-gray-400);
+.contact-card {
+  padding: 0 1.6rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.contact-card .btn-wrapper {
+  display: flex;
+  gap: 0.8rem;
+}
+
+.contact-card + .contact-card {
+  background-color: var(--colors-card-bg);
+  border-radius: var(--card-border-radius) var(--card-border-radius) 0 0;
+  border-top: 1px solid var(--border-color);
+  padding: 2rem 1.6rem 50vh;
+  gap: 2rem;
+
+  & .btn-wrapper {
+    margin-top: 0.8rem;
+  }
+}
+
+.contact-card h4,
+.contact-card h5 {
   font-size: var(--fs-lg);
+}
+.contact-card h5 {
+  color: var(--colors-gray-400);
   font-weight: 300;
 }
 
-ul.qaos-contacts,
 ul.organizing-committee {
   margin: 0.4rem 0 0 1rem;
 }
 
-ul.qaos-contacts li svg,
 ul.organizing-committee li svg {
-  width: 1.4rem;
+  width: var(--fs-sm);
 }
 
-ul.qaos-contacts li a,
 ul.organizing-committee li a {
   font-size: var(--fs-sm);
   color: var(--colors-gray-200);
@@ -45,14 +66,13 @@ ul.organizing-committee li a {
   align-items: center;
   gap: 0.8rem;
   transition: 150ms ease-in-out;
+  &:hover {
+    color: var(--colors-accent);
+  }
 }
 
-ul.qaos-contacts li a:hover,
-ul.organizing-committee li a:hover {
-  color: var(--colors-accent);
-}
-
-.organizer-title h6 {
+.organizer-title h6,
+.partner-contact-wrapper p {
   font-size: var(--fs-md);
 }
 
@@ -62,83 +82,75 @@ p.attributions {
 }
 
 a.organizer-contact {
-  margin-top: 0.4rem;
-  margin-bottom: 1.6rem;
+  margin-top: 0.2rem;
+  margin-bottom: 0.8rem;
 }
 
-h4#partnerWithUs {
-  font-size: var(--fs-lg);
-}
+/* Tiny Mobile */
+@media screen and (max-height: 700px) {
+  .contact-card img {
+    width: 70%;
+  }
 
-p#partnerWithUs {
-  font-size: var(--fs-md);
-  margin-bottom: 1.2rem;
+  .contact-card {
+    gap: 0.4rem;
+  }
+
+  .contact-card + .contact-card {
+    padding: 2rem 1.6rem 50vh;
+    gap: 2rem;
+
+    & .btn-wrapper {
+      margin-top: 0.8rem;
+    }
+  }
+
+  .contact-card h4,
+  .contact-card h5 {
+    font-size: var(--fs-md);
+  }
+
+  .organizer-title {
+    display: flex;
+    gap: 0.8rem;
+  }
+
+  .organizer-title h6,
+  .partner-contact-wrapper p {
+    font-size: var(--fs-sm);
+  }
+
+  p.attributions::before {
+    content: "\22C5 \2002";
+  }
+
+  a.organizer-contact {
+    margin-top: 0;
+    margin-bottom: 0.8rem;
+  }
 }
 
 /* Desktop */
 @media screen and (min-width: 1025px) {
   .contact-wrapper {
-    color: var(--colors-gray-50);
-    gap: 3.2rem;
-  }
-
-  .partner-contact-wrapper {
-    display: flex;
-    flex-direction: column;
-    gap: 0.4rem;
-  }
-
-  h4#partnerWithUs {
-    font-size: var(--fs-lg);
-  }
-
-  p#partnerWithUs {
-    font-size: var(--fs-md);
-    margin-bottom: 1.2rem;
-  }
-
-  .contact-wrapper {
-    padding: 0;
-    border: none;
-    border-radius: 0;
-    background-color: transparent;
-    width: 80vw;
+    gap: 2rem;
     flex-direction: row;
+    width: 100vw;
+    padding: 0 10vw;
   }
 
   .contact-card {
     width: 50%;
-    border-top: 1px solid var(--border-color);
-    background-color: var(--colors-card-bg);
-    padding: 2rem 2.4rem 4rem;
+    max-width: 65rem;
+  }
+
+  .contact-card + .contact-card {
+    padding: 2rem;
     border-radius: var(--card-border-radius);
+    justify-content: center;
   }
 
-  .qaos-contact-wrapper {
-    margin: 3.2rem 0 0;
-  }
-
-  ul.qaos-contacts,
-  ul.organizing-committee {
-    margin: 0.4rem 0 0 1.6rem;
-  }
-
-  ul.qaos-contacts li svg,
-  ul.organizing-committee li svg {
-    width: 1.6rem;
-  }
-
-  ul.qaos-contacts li a,
-  ul.organizing-committee li a {
-    font-size: var(--fs-md);
-    gap: 1.2rem;
-  }
-
-  .organizer-title h6 {
-    font-size: var(--fs-md);
-  }
-
-  p.attributions {
-    font-size: var(--fs-sm);
+  .contact-card img {
+    width: 100%;
   }
 }

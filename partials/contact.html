@@ -1,21 +1,15 @@
-<h3 id="contactTitle" class="white-label">Contact</h3>
+<h3 class="white-label i18n-contactTitle">Contact</h3>
 
 <div class="contact-wrapper">
   <div class="contact-card">
-    <div class="partner-contact-wrapper">
-      <h4 id="partnerWithUs">Partner With Us</h4>
-
-      <p id="partnerWithUs">
-        Interested in partnering with us or helping promote this event? Get in
-        touch with us!
-      </p>
-
+    <img src="/assets/contact/minimap.webp" alt="" />
+    <div class="btn-wrapper">
       <a
-        href="mailto:seratiuk.flores.heloisa.236@m.kyushu-u.ac.jp"
-        class="btn btn-secondary contact-us"
+        href="https://maps.app.goo.gl/3jaT2t9Z6vzV86rx5"
+        target="_blank"
+        class="btn btn-secondary btn-mini"
       >
-        <span id="contactUs"> Contact Us </span>
-
+        <span class="i18n-googlemaps"> Google Maps </span>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="24"
@@ -26,40 +20,55 @@
           stroke-width="2"
           stroke-linecap="round"
           stroke-linejoin="round"
-          class="lucide lucide-mail-icon lucide-mail"
+          class="lucide lucide-map-icon lucide-map"
         >
-          <path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7" />
-          <rect x="2" y="4" width="20" height="16" rx="2" />
+          <path
+            d="M14.106 5.553a2 2 0 0 0 1.788 0l3.659-1.83A1 1 0 0 1 21 4.619v12.764a1 1 0 0 1-.553.894l-4.553 2.277a2 2 0 0 1-1.788 0l-4.212-2.106a2 2 0 0 0-1.788 0l-3.659 1.83A1 1 0 0 1 3 19.381V6.618a1 1 0 0 1 .553-.894l4.553-2.277a2 2 0 0 1 1.788 0z"
+          />
+          <path d="M15 5.764v15" />
+          <path d="M9 3.236v15" />
         </svg>
       </a>
-    </div>
-
-    <div class="qaos-contact-wrapper">
-      <h5 id="forUpcomingEvents">For Upcoming Events</h5>
-
-      <ul class="qaos-contacts">
-        <li>
-          <a href="https://q-aos.kyushu-u.ac.jp/en/contact/" target="_blank">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-external-link-icon lucide-external-link"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg>
-
-            <span id="contactQAOS"> Visit QAOS Website </span>
-          </a>
-        </li>
-      </ul>
+      <a
+        href="https://www.kyushu-u.ac.jp/f/52542/OHASHI_Eng.pdf"
+        target="_blank"
+        class="btn btn-secondary btn-mini"
+      >
+        <span class="i18n-minimap"> Campus Map </span>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="lucide lucide-map-pin-icon lucide-map-pin"
+        >
+          <path
+            d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"
+          />
+          <circle cx="12" cy="10" r="3" />
+        </svg>
+      </a>
     </div>
   </div>
 
   <div class="contact-card">
-    <h5 id="organizingCommittee">Organizing Committee</h5>
+    <div class="partner-contact-wrapper">
+      <h4 class="i18n-partnerWithUs">Partner With Us</h4>
 
-    <ul class="organizing-committee">
-      <li>
-        <div class="organizer-title">
-          <h6>Charlène Clonts</h6>
-          <p class="attributions" id="charleneAttribution">Title</p>
-        </div>
+      <p class="i18n-partnerWithUsDescription">
+        Interested in partnering with us or helping promote this event? Get in
+        touch with us!
+      </p>
 
-        <a href="mailto:" class="organizer-contact">
+      <div class="btn-wrapper">
+        <a href="mailto:hflores@kyudai.jp" class="btn">
+          <span class="i18n-contactUs"> Contact Us </span>
+
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"
@@ -75,21 +84,15 @@
             <path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7" />
             <rect x="2" y="4" width="20" height="16" rx="2" />
           </svg>
-
-          email address
         </a>
-      </li>
-
-      <li>
-        <div class="organizer-title">
-          <h6>Heloísa Flores</h6>
-          <p class="attributions" id="heloisaAttribution">Main organizer</p>
-        </div>
 
         <a
-          href="mailto:seratiuk.flores.heloisa.236@m.kyushu-u.ac.jp"
-          class="organizer-contact"
+          href="https://q-aos.kyushu-u.ac.jp/en/contact/"
+          target="_blank"
+          class="btn btn-secondary"
         >
+          <span class="i18n-contactQAOS"> QAOS Website </span>
+
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"
@@ -100,44 +103,103 @@
             stroke-width="2"
             stroke-linecap="round"
             stroke-linejoin="round"
-            class="lucide lucide-mail-icon lucide-mail"
+            class="lucide lucide-external-link-icon lucide-external-link"
           >
-            <path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7" />
-            <rect x="2" y="4" width="20" height="16" rx="2" />
+            <path d="M15 3h6v6" />
+            <path d="M10 14 21 3" />
+            <path
+              d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+            />
           </svg>
-
-          seratiuk.flores.heloisa.236@m.kyushu-u.ac.jp
         </a>
-      </li>
+      </div>
+    </div>
 
-      <li>
-        <div class="organizer-title">
-          <h6>Maria Almeida</h6>
-          <p class="attributions" id="mariaAttribution">
-            Website development, communication support
-          </p>
-        </div>
+    <div class="organizing-committee-wrapper">
+      <h5 class="i18n-organizingCommittee">Organizing Committee</h5>
 
-        <a href="mailto:mariak.fla@gmail.com" class="organizer-contact">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            class="lucide lucide-mail-icon lucide-mail"
-          >
-            <path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7" />
-            <rect x="2" y="4" width="20" height="16" rx="2" />
-          </svg>
+      <ul class="organizing-committee">
+        <li>
+          <div class="organizer-title">
+            <h6>Charlène Clonts</h6>
+            <p class="attributions i18n-charleneAttribution">Title</p>
+          </div>
 
-          mariak.fla@gmail.com
-        </a>
-      </li>
-    </ul>
+          <a href="mailto:" class="organizer-contact">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-mail-icon lucide-mail"
+            >
+              <path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7" />
+              <rect x="2" y="4" width="20" height="16" rx="2" />
+            </svg>
+
+            email address
+          </a>
+        </li>
+
+        <li>
+          <div class="organizer-title">
+            <h6>Heloísa Flores</h6>
+            <p class="attributions i18n-heloisaAttribution">Main Organizer</p>
+          </div>
+
+          <a href="mailto:hflores@kyudai.jp" class="organizer-contact">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-mail-icon lucide-mail"
+            >
+              <path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7" />
+              <rect x="2" y="4" width="20" height="16" rx="2" />
+            </svg>
+
+            hflores@kyudai.jp
+          </a>
+        </li>
+
+        <li>
+          <div class="organizer-title">
+            <h6>Maria Almeida</h6>
+            <p class="attributions i18n-mariaAttribution">Webdesign, Support</p>
+          </div>
+
+          <a href="mailto:mariak.fla@gmail.com" class="organizer-contact">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-mail-icon lucide-mail"
+            >
+              <path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7" />
+              <rect x="2" y="4" width="20" height="16" rx="2" />
+            </svg>
+
+            mariak.fla@gmail.com
+          </a>
+        </li>
+      </ul>
+    </div>
   </div>
 </div>
