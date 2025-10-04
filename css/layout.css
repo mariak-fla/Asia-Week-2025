@@ -45,6 +45,12 @@ section {
   align-items: center;
   display: flex;
   flex-direction: column;
+}
+
+.timeline,
+#guests,
+#lecturers,
+#contact {
   padding: 10vh 0 0;
 }
 
@@ -59,7 +65,6 @@ section {
   .timeline,
   #guests,
   #lecturers,
-  #partners,
   #contact {
     padding: 8dvh 0 0;
   }

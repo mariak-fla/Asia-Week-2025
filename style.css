@@ -156,23 +156,6 @@ p#heroDescription {
   width: 6rem;
 }
 
-a.btn.maps,
-a.btn.sign-up,
-a.btn.contact-us {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
-  font-size: var(--fs-cta);
-}
-
-a.btn.maps svg,
-a.btn.sign-up svg,
-a.btn.contact-us svg {
-  width: var(--fs-cta);
-}
-
 .event-info-txt {
   display: flex;
   flex-direction: column;
@@ -312,10 +295,6 @@ h3.black-label {
 
 /* Desktop */
 @media screen and (min-width: 1025px) {
-  .btn {
-    padding: 1.2rem 0;
-  }
-
   .hero-wrapper {
     width: 100vw;
     height: 100vh;

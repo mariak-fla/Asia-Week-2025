@@ -59,8 +59,7 @@ a.location svg {
 
 .schedule-txt,
 .guest-txt,
-.partners-wrapper,
-.contact-wrapper {
+.partners-wrapper {
   padding: 2.8rem 2rem 50vh;
   border-top: 1px solid var(--border-color);
   border-radius: var(--card-border-radius) var(--card-border-radius) 0 0;
