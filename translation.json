@@ -1,9 +1,30 @@
 [
+  { "key": "navLink00_en", "value": "Home" },
+  { "key": "navLink00_jp", "value": "[JP Home]" },
+  { "key": "navLink01_en", "value": "Schedule" },
+  { "key": "navLink01_jp", "value": "[JP Schedule]" },
+  { "key": "navLink02_en", "value": "Guests" },
+  { "key": "navLink02_jp", "value": "[JP Guests]" },
+  { "key": "navLink03_en", "value": "Lecturers" },
+  { "key": "navLink03_jp", "value": "[JP Lecturers]" },
+  { "key": "navLink04_en", "value": "Partners" },
+  { "key": "navLink04_jp", "value": "[JP Partners]" },
+  { "key": "navLink05_en", "value": "Contact" },
+  { "key": "navLink05_jp", "value": "[JP Contact]" },
+
   { "key": "mainTitle_en", "value": "Soviet Film:" },
   { "key": "mainTitle_jp", "value": "ソビエト映画:" },
   {
     "key": "mainSubtitle_en",
     "value": "Connecting Asia Through the Work of Viktor Tsoi"
+  },
+  {
+    "key": "address_en",
+    "value": "Kyushu University, Ohashi Campus, Design Commons"
+  },
+  {
+    "key": "address_jp",
+    "value": "[JP Kyushu University, Ohashi Campus, Design Commons]"
   },
   {
     "key": "mainSubtitle_jp",
@@ -15,7 +36,7 @@
   },
   {
     "key": "heroDescription_jp",
-    "value": "Join us for a screening of The Needle, with the presence of its director, Rachid Nougmanov. The event will also have lectures about the connections among Viktor Tsoi, Kino, and Asia, and will have very special international guests, who will participate in round tables with the audience."
+    "value": "[JP Join us for a screening of The Needle, with the presence of its director, Rachid Nougmanov. The event will also have lectures about the connections among Viktor Tsoi, Kino, and Asia, and will have very special international guests, who will participate in round tables with the audience.]"
   },
   { "key": "dateLine1_en", "value": "08" },
   { "key": "dateLine1_jp", "value": "8日" },
@@ -28,7 +49,7 @@
   { "key": "signUp_en", "value": "Sign Up" },
   { "key": "signUp_jp", "value": "申し込む" },
   { "key": "scheduleTitle_en", "value": "schedule" },
-  { "key": "scheduleTitle_jp", "value": "SCHEDULE JP" },
+  { "key": "scheduleTitle_jp", "value": "[JP SCHEDULE]" },
   {
     "key": "location_en",
     "value": "Kyushu University, Ohashi Campus, Design Commons"
@@ -40,7 +61,7 @@
   },
   {
     "key": "activityTitle1_jp",
-    "value": "<span class=\"bold\">Welcome Remarks</span>"
+    "value": "<span class=\"bold\">[JP Welcome Remarks]</span>"
   },
   {
     "key": "activityTitle2_en",
@@ -48,15 +69,23 @@
   },
   {
     "key": "activityTitle2_jp",
-    "value": "<span class=\"bold\">Historical Context:</span> Viktor Tsoi's Lasting Influence Throughout Asia"
+    "value": "<span class=\"bold\">[JP Historical Context:]</span> [JP Viktor Tsoi's Lasting Influence Throughout Asia]"
   },
   {
     "key": "heloisaTitle_en",
-    "value": "Specially Appointed Assistant Professor"
+    "value": "Specially Appointed Assistant Professor <span class=\"bold\">Heloísa Seratiuk Flores</span>"
   },
   {
     "key": "heloisaTitle_jp",
-    "value": "Specially Appointed Assistant Professor"
+    "value": "[JP Specially Appointed Assistant Professor] <span class=\"bold\">[Heloísa Seratiuk Flores]</span>"
+  },
+  {
+    "key": "break_en",
+    "value": "Break"
+  },
+  {
+    "key": "break_jp",
+    "value": "[JP Break]"
   },
   {
     "key": "activityTitle3_en",
@@ -67,13 +96,13 @@
     "value": "<span class=\"bold\">Round Table Conversation:</span> Bringing Kino to Japan through Film: Connections and Motivations"
   },
   { "key": "moderator_en", "value": "Moderator:" },
-  { "key": "moderator_jp", "value": "Moderator:" },
+  { "key": "moderator_jp", "value": "[JP Moderator:]" },
   { "key": "participants_en", "value": "Participants:" },
-  { "key": "participants_jp", "value": "Participants:" },
+  { "key": "participants_jp", "value": "[JP Participants:]" },
   { "key": "Break_en", "value": "Break" },
-  { "key": "Break_jp", "value": "休み" },
+  { "key": "Break_jp", "value": "[JP Break]" },
   { "key": "associateProfessor_en", "value": "Associate Professor" },
-  { "key": "associateProfessor_jp", "value": "Associate Professor" },
+  { "key": "associateProfessor_jp", "value": "[JP Associate Professor]" },
   { "key": "activityTitle5_en", "value": "TBA" },
   { "key": "activityTitle5_jp", "value": "TBA" },
   {

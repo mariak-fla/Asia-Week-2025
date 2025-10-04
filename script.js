@@ -18,6 +18,7 @@ $(function () {
   $("#contact").load("partials/contact.html");
 
   setMainHeight();
+  updateLanguage();
 });
 
 function setMainHeight() {
@@ -43,28 +44,26 @@ $(document).on("change", "#lang-toggle", updateLanguage);
 function updateLanguage() {
   const isJP = $("#lang-toggle").is(":checked");
   const lang = isJP ? "jp" : "en";
-  const ids = [
-    "mainTitle",
-    "mainSubtitle",
-    "heroDescription",
-    "dateLine1",
-    "dateLine2",
-    "dateLine3",
-    "signUp",
-    "scheduleTitle",
-    "activityTitle1",
-    "location",
-    "prevBtn",
-    "nextBtn",
-    "moderator",
-    "heloisaTitle",
-    "Break",
-  ];
-  ids.forEach((id) => {
-    const key = `${id}_${lang}`;
-    if (translations[key]) {
-      $(`#${id}`).html(translations[key]);
-    }
+
+  $("[class*='i18n-']").each(function () {
+    const classes = this.className.split(/\s+/);
+    classes.forEach((cls) => {
+      if (cls.startsWith("i18n-")) {
+        const keyBase = cls.replace(/^i18n-/, ""); // Remove i18n- prefix
+        const key = `${keyBase}_${lang}`;
+        if (translations[key]) {
+          console.log(
+            "Translating",
+            cls,
+            "with key",
+            key,
+            "->",
+            translations[key]
+          );
+          $(this).html(translations[key]);
+        }
+      }
+    });
   });
 }
 
