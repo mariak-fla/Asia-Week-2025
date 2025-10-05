@@ -11,7 +11,6 @@
   { "key": "navLink04_jp", "value": "[JP Partners]" },
   { "key": "navLink05_en", "value": "Contact" },
   { "key": "navLink05_jp", "value": "[JP Contact]" },
-
   { "key": "mainTitle_en", "value": "Soviet Film:" },
   { "key": "mainTitle_jp", "value": "ソビエト映画:" },
   {
@@ -19,16 +18,16 @@
     "value": "Connecting Asia Through the Work of Viktor Tsoi"
   },
   {
+    "key": "mainSubtitle_jp",
+    "value": "ヴィクトルツォイを通して築くアジアのつながり"
+  },
+  {
     "key": "address_en",
     "value": "Kyushu University, Ohashi Campus, Design Commons"
   },
   {
     "key": "address_jp",
-    "value": "[JP Kyushu University, Ohashi Campus, Design Commons]"
-  },
-  {
-    "key": "mainSubtitle_jp",
-    "value": "ヴィクトルツォイを通して築くアジアのつながり"
+    "value": "九州大学 大橋キャンパス デザインコモンズ"
   },
   {
     "key": "heroDescription_en",
@@ -57,11 +56,11 @@
   { "key": "location_jp", "value": "九州大学 大橋キャンパス デザインコモンズ" },
   {
     "key": "activityTitle1_en",
-    "value": "<span class=\"bold\">Welcome Remarks</span>"
+    "value": "Welcome Remarks"
   },
   {
     "key": "activityTitle1_jp",
-    "value": "<span class=\"bold\">[JP Welcome Remarks]</span>"
+    "value": "[JP Welcome Remarks]"
   },
   {
     "key": "activityTitle2_en",
@@ -72,12 +71,68 @@
     "value": "<span class=\"bold\">[JP Historical Context:]</span> [JP Viktor Tsoi's Lasting Influence Throughout Asia]"
   },
   {
+    "key": "heloisaName_en",
+    "value": "Heloísa Seratiuk Flores"
+  },
+  {
+    "key": "heloisaName_jp",
+    "value": "[JP Heloísa Seratiuk Flores]"
+  },
+  {
+    "key": "rachidName_en",
+    "value": " Rachid Nougmanov"
+  },
+  {
+    "key": "rachidName_jp",
+    "value": "[JP  Rachid Nougmanov]"
+  },
+  {
+    "key": "kikiName_en",
+    "value": " Kiki Miyake"
+  },
+  {
+    "key": "kikiName_jp",
+    "value": "[JP  Kiki Miyake]"
+  },
+  {
+    "key": "joannaName_en",
+    "value": " Joanna Stingray"
+  },
+  {
+    "key": "joannaName_jp",
+    "value": "[JP  Joanna Stingray]"
+  },
+  {
+    "key": "charleneName_en",
+    "value": " Charléne Clonts"
+  },
+  {
+    "key": "charleneName_jp",
+    "value": "[JP Charléne Clonts]"
+  },
+  {
+    "key": "kamiokaName_en",
+    "value": " Rieko Kamioka"
+  },
+  {
+    "key": "kamiokaName_jp",
+    "value": "[JP Rieko Kamioka]"
+  },
+  {
+    "key": "kangName_en",
+    "value": " Kang Byoung Yoong"
+  },
+  {
+    "key": "kangName_jp",
+    "value": "[JP Kang Byoung Yoong]"
+  },
+  {
     "key": "heloisaTitle_en",
-    "value": "Specially Appointed Assistant Professor <span class=\"bold\">Heloísa Seratiuk Flores</span>"
+    "value": "Specially Appointed Assistant Professor "
   },
   {
     "key": "heloisaTitle_jp",
-    "value": "[JP Specially Appointed Assistant Professor] <span class=\"bold\">[Heloísa Seratiuk Flores]</span>"
+    "value": "[JP Specially Appointed Assistant Professor] "
   },
   {
     "key": "break_en",
@@ -93,34 +148,205 @@
   },
   {
     "key": "activityTitle3_jp",
-    "value": "<span class=\"bold\">Round Table Conversation:</span> Bringing Kino to Japan through Film: Connections and Motivations"
+    "value": "<span class=\"bold\">[JP Round Table Conversation:]</span> [JP Bringing Kino to Japan through Film: Connections and Motivations]"
   },
   { "key": "moderator_en", "value": "Moderator:" },
   { "key": "moderator_jp", "value": "[JP Moderator:]" },
   { "key": "participants_en", "value": "Participants:" },
   { "key": "participants_jp", "value": "[JP Participants:]" },
-  { "key": "Break_en", "value": "Break" },
-  { "key": "Break_jp", "value": "[JP Break]" },
+  { "key": "break_en", "value": "Break" },
+  { "key": "break_jp", "value": "[JP Break]" },
   { "key": "associateProfessor_en", "value": "Associate Professor" },
   { "key": "associateProfessor_jp", "value": "[JP Associate Professor]" },
   { "key": "activityTitle5_en", "value": "TBA" },
-  { "key": "activityTitle5_jp", "value": "TBA" },
+  { "key": "activityTitle5_jp", "value": "[JP Charlene's activity title]" },
   {
     "key": "activityTitle6_en",
     "value": "Russian Underground Art and Music during Perestroika"
   },
   {
     "key": "activityTitle6_jp",
-    "value": "Russian Underground Art and Music during Perestroika"
+    "value": "[JP Russian Underground Art and Music during Perestroika]"
   },
   { "key": "professor_en", "value": "Professor" },
-  { "key": "professor_jp", "value": "Professor" },
+  { "key": "professor_jp", "value": "[JP Professor]" },
   {
     "key": "activityTitle7_en",
     "value": "<span class=\"bold\"> Viktor Tsoi:</span> Connecting Russia, Japan, Korea, and Brazil"
   },
   {
     "key": "activityTitle7_jp",
-    "value": "<span class=\"bold\"> Viktor Tsoi:</span> Connecting Russia, Japan, Korea, and Brazil"
+    "value": "<span class=\"bold\"> [JP Viktor Tsoi:]</span> [JP Connecting Russia, Japan, Korea, and Brazil]"
+  },
+  {
+    "key": "activityTitle8_en",
+    "value": "Introduction to The Needle"
+  },
+  {
+    "key": "activityTitle8_jp",
+    "value": "[JP Introduction to The Needle]"
+  },
+  {
+    "key": "activityTitle9_en",
+    "value": "The Needle Screening"
+  },
+  {
+    "key": "activityTitle9_jp",
+    "value": "[JP The Needle Screening]"
+  },
+  {
+    "key": "activityTitle10_en",
+    "value": "Q&A Session"
+  },
+  {
+    "key": "activityTitle10_jp",
+    "value": "[JP Q&A Session]"
+  },
+  { "key": "guestsTitle_en", "value": "guest speakers" },
+  { "key": "guestsTitle_jp", "value": "[JP GUEST SPEAKERS]" },
+  { "key": "rachidTitle_en", "value": "Film Director" },
+  { "key": "rachidTitle_jp", "value": "[JP Film Director]" },
+  {
+    "key": "rachidDescription_en",
+    "value": "Director of The Needle. A Kazakh film director, screenwriter, and producer. A pioneer of Kazakh new wave cinema, he connects Central Asian narratives with global audiences."
+  },
+  {
+    "key": "rachidDescription_jp",
+    "value": "[JP Director of The Needle. A Kazakh film director, screenwriter, and producer. A pioneer of Kazakh new wave cinema, he connects Central Asian narratives with global audiences.]"
+  },
+  { "key": "kikiTitle_en", "value": "Executive Film Producer" },
+  { "key": "kikiTitle_jp", "value": "[JP Executive Film Producer]" },
+  {
+    "key": "kikiDescription_en",
+    "value": "Producer at Amuse Inc. and founder of Little Magic Films, develops internationally acclaimed projects that bridge Japanese cinema with global audiences, fostering cross-cultural storytelling and innovative film collaborations."
+  },
+  {
+    "key": "kikiDescription_jp",
+    "value": "[JP Producer at Amuse Inc. and founder of Little Magic Films, develops internationally acclaimed projects that bridge Japanese cinema with global audiences, fostering cross-cultural storytelling and innovative film collaborations.]"
+  },
+  { "key": "joannaTitle_en", "value": "Singer, Actress, Music Producer" },
+  { "key": "joannaTitle_jp", "value": "[JP Singer, Actress, Music Producer]" },
+  {
+    "key": "joannaDescription_en",
+    "value": "American singer, producer, and writer who introduced Soviet rock to Western audiences, building cultural exchange through music and art between the United States, Russia, and Japan since the 1980s. Joanna will be joining us online."
+  },
+  {
+    "key": "joannaDescription_jp",
+    "value": "[JP American singer, producer, and writer who introduced Soviet rock to Western audiences, building cultural exchange through music and art between the United States, Russia, and Japan since the 1980s. Joanna will be joining us online.]"
+  },
+  { "key": "lecturersTitle_en", "value": "Lecturers" },
+  { "key": "lecturersTitle_jp", "value": "[JP Lecturers]" },
+  {
+    "key": "charleneBio_en",
+    "value": "Professor at the Faculty of Humanities, Department of Language and Literature, Kyushu University. Her research involves well-being through the arts, exploring how creative practices enhance mental health and cross-cultural understanding. "
+  },
+  {
+    "key": "charleneBio_jp",
+    "value": "[JP Professor at the Faculty of Humanities, Department of Language and Literature, Kyushu University. Her research involves well-being through the arts, exploring how creative practices enhance mental health and cross-cultural understanding.]"
+  },
+  {
+    "key": "kangBio_en",
+    "value": "Writer and Professor of Korean culture and Literature at the University of Ljubljana. Known for his literary work bridging Viktor Tsoi and Korean identity."
+  },
+  {
+    "key": "kangBio_jp",
+    "value": "[JP Writer and Professor of Korean culture and Literature at the University of Ljubljana. Known for his literary work bridging Viktor Tsoi and Korean identity.]"
+  },
+  {
+    "key": "heloisaBio_en",
+    "value": "Assistant Professor at the Institute for Asian and Oceanian Studies at Kyushu University. Her background is in art and design, however, her interests permeate cultural and social factors, leading to her research into cultural expression in different countries."
+  },
+  {
+    "key": "heloisaBio_jp",
+    "value": "[JP Assistant Professor at the Institute for Asian and Oceanian Studies at Kyushu University. Her background is in art and design, however, her interests permeate cultural and social factors, leading to her research into cultural expression in different countries.]"
+  },
+  {
+    "key": "kamiokaBio_en",
+    "value": "Lecturer in Russian literature, underground art, and culture at Chuo Gakuin University, having previously lectured on NHK's Advanced Russian programmes."
+  },
+  {
+    "key": "kamiokaBio_jp",
+    "value": "[JP Lecturer in Russian literature, underground art, and culture at Chuo Gakuin University, having previously lectured on NHK's Advanced Russian programmes.]"
+  },
+  { "key": "partnersTitle_en", "value": "Partners" },
+  { "key": "partnersTitle_jp", "value": "[JP Partners]" },
+  { "key": "contactTitle_en", "value": "Contact" },
+  { "key": "contactTitle_jp", "value": "[JP Contact]" },
+  { "key": "googlemaps_en", "value": "Google Maps" },
+  { "key": "googlemaps_jp", "value": "[JP Google Maps]" },
+  { "key": "minimap_en", "value": "Campus Map" },
+  { "key": "minimap_jp", "value": "[JP Campus Map]" },
+  { "key": "partnerWithUs_en", "value": "Partner With Us" },
+  { "key": "partnerWithUs_jp", "value": "[JP Partner With Us]" },
+  {
+    "key": "partnerWithUsDescription_en",
+    "value": "Interested in partnering with us or helping promote this event? Get in touch with us!"
+  },
+  {
+    "key": "partnerWithUsDescription_jp",
+    "value": "[JP Interested in partnering with us or helping promote this event? Get in touch with us!]"
+  }
+  ,
+  {
+    "key": "contactUs_en",
+    "value": "Contact Us"
+  },
+  {
+    "key": "contactUs_jp",
+    "value": "[JP Contact Us]"
+  }
+  ,
+  {
+    "key": "contactQAOS_en",
+    "value": "QAOS Website"
+  },
+  {
+    "key": "contactQAOS_jp",
+    "value": "[JP QAOS Website]"
+  }
+  ,
+  {
+    "key": "organizingCommittee_en",
+    "value": "Organizing Committee"
+  },
+  {
+    "key": "organizingCommittee_jp",
+    "value": "[JP Organizing Committee]"
+  }
+  ,
+  {
+    "key": "charleneAttribution_en",
+    "value": "Charlene's Organization Committee Attributions"
+  },
+  {
+    "key": "charleneAttribution_jp",
+    "value": "[JP Charlene's Organization Committee Attributions]"
+  }
+  ,
+  {
+    "key": "heloisaAttribution_en",
+    "value": "Main Organizer"
+  },
+  {
+    "key": "heloisaAttribution_jp",
+    "value": "[JP Main Organizer]"
+  }
+  ,
+  {
+    "key": "mariaName_en",
+    "value": "Maria Almeida"
+  },
+  {
+    "key": "mariaName_jp",
+    "value": "アレメイダ真里亞"
+  }
+  ,
+  {
+    "key": "mariaAttribution_en",
+    "value": "Webdesign, Support"
+  },
+  {
+    "key": "mariaAttribution_jp",
+    "value": "[JP Webdesign, Support]"
   }
 ]

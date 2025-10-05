@@ -106,7 +106,7 @@
   font-size: var(--fs-md);
 }
 
-p#address {
+p.address {
   font-size: 1.2rem;
   padding-bottom: 0.4rem;
   color: var(--colors-gray-400);
@@ -406,7 +406,7 @@ h3.black-label {
     font-size: 2rem;
   }
 
-  p#address {
+  p.address {
     font-size: var(--fs-md);
     padding-bottom: 0.4rem;
     color: var(--colors-gray-400);
