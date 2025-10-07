@@ -13,7 +13,7 @@
 }
 
 .guest-img-wrapper img {
-  height: 44vh;
+  height: 40vh;
 }
 
 .guest-card .title-wrapper {
@@ -49,7 +49,7 @@ p.guest-description {
   }
 
   .guest-img-wrapper {
-    transform: translateX(-60%);
+    transform: translateX(-50%);
   }
 
   h3.guest-name {

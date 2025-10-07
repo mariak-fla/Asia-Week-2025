@@ -13,7 +13,7 @@
 }
 
 .contact-card img {
-  width: 80%;
+  width: 75%;
   height: auto;
   margin: auto;
 }
@@ -34,7 +34,7 @@
   background-color: var(--colors-card-bg);
   border-radius: var(--card-border-radius) var(--card-border-radius) 0 0;
   border-top: 1px solid var(--border-color);
-  padding: 2rem 1.6rem 50vh;
+  padding: 2rem 1.4rem 50vh;
   gap: 2rem;
 
   & .btn-wrapper {
@@ -52,7 +52,7 @@
 }
 
 ul.organizing-committee {
-  margin: 0.4rem 0 0 1rem;
+  margin: 0.4rem 0 0 .5rem;
 }
 
 ul.organizing-committee li svg {
@@ -71,6 +71,10 @@ ul.organizing-committee li a {
   }
 }
 
+.organizer-title h6 {
+  margin-top: 0.4rem;
+}
+
 .organizer-title h6,
 .partner-contact-wrapper p {
   font-size: var(--fs-md);
@@ -83,7 +87,6 @@ p.attributions {
 
 a.organizer-contact {
   margin-top: 0.2rem;
-  margin-bottom: 0.8rem;
 }
 
 /* Tiny Mobile */
@@ -97,11 +100,11 @@ a.organizer-contact {
   }
 
   .contact-card + .contact-card {
-    padding: 2rem 1.6rem 50vh;
+    padding: 2rem 1.4rem 50vh;
     gap: 2rem;
 
     & .btn-wrapper {
-      margin-top: 0.8rem;
+      margin-top: 0.4rem;
     }
   }
 
@@ -112,8 +115,13 @@ a.organizer-contact {
 
   .organizer-title {
     display: flex;
-    gap: 0.8rem;
+    gap: 0.4rem;
+    align-items: flex-end;
   }
+
+.organizer-title h6 {
+  margin-top: 0.6rem;
+}
 
   .organizer-title h6,
   .partner-contact-wrapper p {
@@ -126,7 +134,7 @@ a.organizer-contact {
 
   a.organizer-contact {
     margin-top: 0;
-    margin-bottom: 0.8rem;
+    /* margin-bottom: 0.8rem; */
   }
 }
 
