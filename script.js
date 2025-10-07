@@ -45,7 +45,6 @@ function updateLanguage() {
   const isJP = $("#lang-toggle").is(":checked");
   const lang = isJP ? "jp" : "en";
 
-  // ✅ Add/remove a class on <body> so CSS can target JP only
   if (isJP) {
     document.body.classList.add("lang-ja");
   } else {
