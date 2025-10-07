@@ -603,6 +603,6 @@ section:not(#hero) {
 }
 
 .lang-ja { font-size: 0.5em; }   
-.lang-ja h1 { font-size: clamp(2rem, 5vw, 2.6rem); }
-.lang-ja h2 { font-size: clamp(1.6rem, 4vw, 2.1rem); }
-.lang-ja h3 { font-size: clamp(1.3rem, 3vw, 1.6rem); }
+.lang-ja h1 { font-size: clamp(1.5rem, 5vw, 2.4rem); }
+.lang-ja h2 { font-size: clamp(1.2rem, 4vw, 2rem); }
+.lang-ja h3 { font-size: clamp(1rem, 3vw, 1.3rem); }
