@@ -601,8 +601,3 @@ section:not(#hero) {
 #partners {
   background-image: url("assets/gradient-sections-even.jpg");
 }
-
-html[lang="ja"] body { font-size: 0.9em; }  
-html[lang="ja"] h1 { font-size: clamp(1.6rem, 5vw, 2.2rem); }
-html[lang="ja"] h2 { font-size: clamp(1.2rem, 4vw, 1.9rem); }
-html[lang="ja"] h3 { font-size: clamp(1rem, 3vw, 1.4rem); }
