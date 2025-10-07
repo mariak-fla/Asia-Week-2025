@@ -1,16 +1,16 @@
 [
   { "key": "navLink00_en", "value": "Home" },
-  { "key": "navLink00_jp", "value": "[JP Home]" },
+  { "key": "navLink00_jp", "value": "ホーム" },
   { "key": "navLink01_en", "value": "Schedule" },
-  { "key": "navLink01_jp", "value": "[JP Schedule]" },
+  { "key": "navLink01_jp", "value": "スケジュール" },
   { "key": "navLink02_en", "value": "Guests" },
-  { "key": "navLink02_jp", "value": "[JP Guests]" },
+  { "key": "navLink02_jp", "value": "特別講演者" },
   { "key": "navLink03_en", "value": "Lecturers" },
-  { "key": "navLink03_jp", "value": "[JP Lecturers]" },
-  { "key": "navLink04_en", "value": "Partners" },
-  { "key": "navLink04_jp", "value": "[JP Partners]" },
+  { "key": "navLink03_jp", "value": "講演者" },
+  { "key": "navLink04_en", "value": "Organiser" },
+  { "key": "navLink04_jp", "value": "主催者" },
   { "key": "navLink05_en", "value": "Contact" },
-  { "key": "navLink05_jp", "value": "[JP Contact]" },
+  { "key": "navLink05_jp", "value": "お問い合わせ" },
   { "key": "mainTitle_en", "value": "Soviet Film:" },
   { "key": "mainTitle_jp", "value": "ソビエト映画:" },
   {
@@ -19,7 +19,7 @@
   },
   {
     "key": "mainSubtitle_jp",
-    "value": "ヴィクトルツォイを通して築くアジアのつながり"
+    "value": "ヴィクトル・ツォイを通して築くアジアのつながり"
   },
   {
     "key": "address_en",
@@ -35,7 +35,7 @@
   },
   {
     "key": "heroDescription_jp",
-    "value": "[JP Join us for a screening of The Needle, with the presence of its director, Rachid Nougmanov. The event will also have lectures about the connections among Viktor Tsoi, Kino, and Asia, and will have very special international guests, who will participate in round tables with the audience.]"
+    "value": "『僕の無事を祈ってくれ』上映会にご参加ください。本イベントには監督のラシード・ヌグマノフ氏も登壇します。また、ヴィクトル・ツォイ、Kino、そしてアジアとの関係についての講演に加え、特別な国際ゲストをお迎えし、聴衆とのラウンドテーブル・ディスカッションも行われます。"
   },
   { "key": "dateLine1_en", "value": "08" },
   { "key": "dateLine1_jp", "value": "8日" },
@@ -45,10 +45,10 @@
   { "key": "dateLine3_jp", "value": "1-6PM" },
   { "key": "maps_en", "value": "View Map" },
   { "key": "maps_jp", "value": "地図" },
-  { "key": "signUp_en", "value": "Sign Up" },
-  { "key": "signUp_jp", "value": "申し込む" },
+  { "key": "signUp_en", "value": "Register" },
+  { "key": "signUp_jp", "value": "申込フォーム" },
   { "key": "scheduleTitle_en", "value": "schedule" },
-  { "key": "scheduleTitle_jp", "value": "[JP SCHEDULE]" },
+  { "key": "scheduleTitle_jp", "value": "スケジュール" },
   {
     "key": "location_en",
     "value": "Kyushu University, Ohashi Campus, Design Commons"
@@ -60,7 +60,7 @@
   },
   {
     "key": "activityTitle1_jp",
-    "value": "[JP Welcome Remarks]"
+    "value": "開会の挨拶"
   },
   {
     "key": "activityTitle2_en",
@@ -76,7 +76,7 @@
   },
   {
     "key": "heloisaName_jp",
-    "value": "[JP Heloísa Seratiuk Flores]"
+    "value": "セラチュキ・フロレス・エロイザ"
   },
   {
     "key": "rachidName_en",
@@ -84,7 +84,7 @@
   },
   {
     "key": "rachidName_jp",
-    "value": "[JP  Rachid Nougmanov]"
+    "value": "ラシド・ヌーグマノフ"
   },
   {
     "key": "kikiName_en",
@@ -92,7 +92,7 @@
   },
   {
     "key": "kikiName_jp",
-    "value": "[JP  Kiki Miyake]"
+    "value": "キキ三宅"
   },
   {
     "key": "joannaName_en",
@@ -100,7 +100,7 @@
   },
   {
     "key": "joannaName_jp",
-    "value": "[JP  Joanna Stingray]"
+    "value": "ジョアンナ・スティングレイ"
   },
   {
     "key": "charleneName_en",
@@ -108,7 +108,7 @@
   },
   {
     "key": "charleneName_jp",
-    "value": "[JP Charléne Clonts]"
+    "value": "クロンツ・シヤルレーヌ"
   },
   {
     "key": "kamiokaName_en",
@@ -116,7 +116,7 @@
   },
   {
     "key": "kamiokaName_jp",
-    "value": "[JP Rieko Kamioka]"
+    "value": "神岡 理恵子"
   },
   {
     "key": "kangName_en",
@@ -124,7 +124,7 @@
   },
   {
     "key": "kangName_jp",
-    "value": "[JP Kang Byoung Yoong]"
+    "value": "カン・ビョンユン"
   },
   {
     "key": "heloisaTitle_en",
@@ -132,7 +132,15 @@
   },
   {
     "key": "heloisaTitle_jp",
-    "value": "[JP Specially Appointed Assistant Professor] "
+    "value": "特任助教授 "
+  },
+  {
+    "key": "kamiokaTitle_en",
+    "value": "Junior Associate Professor "
+  },
+  {
+    "key": "kamiokaTitle_jp",
+    "value": "准教授 "
   },
   {
     "key": "break_en",
@@ -140,7 +148,7 @@
   },
   {
     "key": "break_jp",
-    "value": "[JP Break]"
+    "value": "休憩"
   },
   {
     "key": "activityTitle3_en",
@@ -148,35 +156,35 @@
   },
   {
     "key": "activityTitle3_jp",
-    "value": "<span class=\"bold\">[JP Round Table Conversation:]</span> [JP Bringing Kino to Japan through Film: Connections and Motivations]"
+    "value": "<span class=\"bold\">Round Table Conversation:</span> 映画を通じてキノーを日本へ：つながりと動機"
   },
   { "key": "moderator_en", "value": "Moderator:" },
-  { "key": "moderator_jp", "value": "[JP Moderator:]" },
-  { "key": "participants_en", "value": "Participants:" },
-  { "key": "participants_jp", "value": "[JP Participants:]" },
+  { "key": "moderator_jp", "value": "司会" },
+  { "key": "participants_en", "value": "Panelist:" },
+  { "key": "participants_jp", "value": "パネリスト" },
   { "key": "break_en", "value": "Break" },
-  { "key": "break_jp", "value": "[JP Break]" },
+  { "key": "break_jp", "value": "休憩" },
   { "key": "associateProfessor_en", "value": "Associate Professor" },
-  { "key": "associateProfessor_jp", "value": "[JP Associate Professor]" },
-  { "key": "activityTitle5_en", "value": "TBA" },
-  { "key": "activityTitle5_jp", "value": "[JP Charlene's activity title]" },
+  { "key": "associateProfessor_jp", "value": "准教授" },
+  { "key": "activityTitle5_en", "value": "Rachid Nougmanov’s Intermedia Practice as Resilience: Trauma & Voices from the Margins" },
+  { "key": "activityTitle5_jp", "value": "レシード・ヌグマノフのインターメディア実践としてのレジリエンス：周縁からのトラウマと声" },
   {
     "key": "activityTitle6_en",
-    "value": "Russian Underground Art and Music during Perestroika"
+    "value": "Introduction and Reception of Viktor Tsoi and Soviet Rock Music in Japan"
   },
   {
     "key": "activityTitle6_jp",
-    "value": "[JP Russian Underground Art and Music during Perestroika]"
+    "value": "ヴィクトル・ツォイとソ連ロック音楽の日本における紹介と受容"
   },
   { "key": "professor_en", "value": "Professor" },
-  { "key": "professor_jp", "value": "[JP Professor]" },
+  { "key": "professor_jp", "value": "教授" },
   {
     "key": "activityTitle7_en",
-    "value": "<span class=\"bold\"> Viktor Tsoi:</span> Connecting Russia, Japan, Korea, and Brazil"
+    "value": "<span class=\"bold\"> Viktor Tsoi:</span> Connecting Korea, Russia, Brazil, Slovenia, and Japan"
   },
   {
     "key": "activityTitle7_jp",
-    "value": "<span class=\"bold\"> [JP Viktor Tsoi:]</span> [JP Connecting Russia, Japan, Korea, and Brazil]"
+    "value": "<span class=\"bold\"> ヴィクトル・ツォイ:</span> ロシア、日本、韓国、ブラジルを結ぶ"
   },
   {
     "key": "activityTitle8_en",
@@ -184,7 +192,7 @@
   },
   {
     "key": "activityTitle8_jp",
-    "value": "[JP Introduction to The Needle]"
+    "value": "『僕の無事を祈ってくれ』の紹介"
   },
   {
     "key": "activityTitle9_en",
@@ -192,7 +200,7 @@
   },
   {
     "key": "activityTitle9_jp",
-    "value": "[JP The Needle Screening]"
+    "value": "『僕の無事を祈ってくれ』上映"
   },
   {
     "key": "activityTitle10_en",
@@ -200,57 +208,57 @@
   },
   {
     "key": "activityTitle10_jp",
-    "value": "[JP Q&A Session]"
+    "value": "質疑応答"
   },
   { "key": "guestsTitle_en", "value": "guest speakers" },
-  { "key": "guestsTitle_jp", "value": "[JP GUEST SPEAKERS]" },
+  { "key": "guestsTitle_jp", "value": "特別講演者" },
   { "key": "rachidTitle_en", "value": "Film Director" },
-  { "key": "rachidTitle_jp", "value": "[JP Film Director]" },
+  { "key": "rachidTitle_jp", "value": "映画監督" },
   {
     "key": "rachidDescription_en",
-    "value": "Director of The Needle. A Kazakh film director, screenwriter, and producer. A pioneer of Kazakh new wave cinema, he connects Central Asian narratives with global audiences."
+    "value": "Director of The Needle. Kazakh film director, screenwriter, and producer, former General Director of the Eurasia International Film Festival and President of the National Academy of Cinematographic Arts and Sciences of Kazakhstan, Chevalier of the Ordre des Arts et des Lettres of France. A pioneer of Kazakh new wave cinema, he connects Central Asian narratives with global audiences."
   },
   {
     "key": "rachidDescription_jp",
-    "value": "[JP Director of The Needle. A Kazakh film director, screenwriter, and producer. A pioneer of Kazakh new wave cinema, he connects Central Asian narratives with global audiences.]"
+    "value": "「僕の無事を祈ってくれ」の監督。カザフスタンの映画監督・脚本家・プロデューサー。ユーラシア国際映画祭の元総合ディレクター、カザフスタン国立映画芸術科学アカデミー会長、フランス芸術文化勲章シュヴァリエ。カザフ・ニューウェーブ映画の先駆者として、中央アジアの物語を世界の観客へとつなげている。"
   },
   { "key": "kikiTitle_en", "value": "Executive Film Producer" },
-  { "key": "kikiTitle_jp", "value": "[JP Executive Film Producer]" },
+  { "key": "kikiTitle_jp", "value": "映画プロデューサー" },
   {
     "key": "kikiDescription_en",
-    "value": "Producer at Amuse Inc. and founder of Little Magic Films, develops internationally acclaimed projects that bridge Japanese cinema with global audiences, fostering cross-cultural storytelling and innovative film collaborations."
+    "value": "Producer and Founder of Little Magic Films, develops and produces internationally acclaimed film projects, such as the Academy Awards nominated ‘Cutie and the Boxer’. Bridging the East and the West, she acted as the US representative of Amuse Pictures, pre-buying English language films such as ‘Pulp Fiction’ and ‘The Pianist’ for distribution in Japan at the script stage and acquiring innovative foreign language films. In the music business, she represented YMO (Yellow Magic Orchestra), Sadao Watanabe among other artists, handling their business in the US and recordings, as well as bringing jazz musicians such as Herbie Hancock to Japan."
   },
   {
     "key": "kikiDescription_jp",
-    "value": "[JP Producer at Amuse Inc. and founder of Little Magic Films, develops internationally acclaimed projects that bridge Japanese cinema with global audiences, fostering cross-cultural storytelling and innovative film collaborations.]"
+    "value": "リトル・マジック・フィルムズのプロデューサー兼創設者。アカデミー賞にノミネートされた『キューティー＆ボクサー』をはじめ、国際的に高く評価される映画プロジェクトの企画・製作を手がけている。東西の架け橋として、アミューズ・ピクチャーズの米国代表を務め、脚本段階で『パルプ・フィクション』や『戦場のピアニスト』といった英語作品の日本配給権を先行購入するとともに、革新的な外国語映画の買い付けも行った。音楽業界では、YMO（イエロー・マジック・オーケストラ）や渡辺貞夫などのアーティストの米国での活動およびレコーディングを担当し、またハービー・ハンコックなどのジャズミュージシャンを日本へ招聘するなど、幅広く活躍している。"
   },
   { "key": "joannaTitle_en", "value": "Singer, Actress, Music Producer" },
-  { "key": "joannaTitle_jp", "value": "[JP Singer, Actress, Music Producer]" },
+  { "key": "joannaTitle_jp", "value": "歌手、作家、音楽プロデューサー" },
   {
     "key": "joannaDescription_en",
     "value": "American singer, producer, and writer who introduced Soviet rock to Western audiences, building cultural exchange through music and art between the United States, Russia, and Japan since the 1980s. Joanna will be joining us online."
   },
   {
     "key": "joannaDescription_jp",
-    "value": "[JP American singer, producer, and writer who introduced Soviet rock to Western audiences, building cultural exchange through music and art between the United States, Russia, and Japan since the 1980s. Joanna will be joining us online.]"
+    "value": "アメリカ出身のシンガー、プロデューサー、作家。1980年代より、音楽とアートを通じて米国・ロシア・日本の間に文化交流の架け橋を築き、ソ連ロックを西側の観客に紹介した。ジョアンナはオンラインで参加予定。"
   },
   { "key": "lecturersTitle_en", "value": "Lecturers" },
-  { "key": "lecturersTitle_jp", "value": "[JP Lecturers]" },
+  { "key": "lecturersTitle_jp", "value": "講演者" },
   {
     "key": "charleneBio_en",
     "value": "Professor at the Faculty of Humanities, Department of Language and Literature, Kyushu University. Her research involves well-being through the arts, exploring how creative practices enhance mental health and cross-cultural understanding. "
   },
   {
     "key": "charleneBio_jp",
-    "value": "[JP Professor at the Faculty of Humanities, Department of Language and Literature, Kyushu University. Her research involves well-being through the arts, exploring how creative practices enhance mental health and cross-cultural understanding.]"
+    "value": "九州大学人文科学府言語文化学科教授。芸術を通じたウェルビーイングを研究テーマとし、創造的な実践がメンタルヘルスや異文化理解をどのように高めるかを探究している。"
   },
   {
     "key": "kangBio_en",
-    "value": "Writer and Professor of Korean culture and Literature at the University of Ljubljana. Known for his literary work bridging Viktor Tsoi and Korean identity."
+    "value": "Fiction writer, translator, and Professor of Korean culture and Literature at the University of Ljubljana. He studied in Seoul and Moscow, joined Iowa’s 2022 International Writing Program (IWP), lives in Ljubljana and publishes novels in Korea, Russia and Brazil."
   },
   {
     "key": "kangBio_jp",
-    "value": "[JP Writer and Professor of Korean culture and Literature at the University of Ljubljana. Known for his literary work bridging Viktor Tsoi and Korean identity.]"
+    "value": "フィクション作家、翻訳家、リュブリャナ大学韓国文化・文学教授。ソウルとモスクワで学び、2022年にはアイオワ大学の国際ライティング・プログラム（IWP）に参加。現在はリュブリャナに在住し、韓国、ロシア、ブラジルで小説を発表している。"
   },
   {
     "key": "heloisaBio_en",
@@ -258,69 +266,68 @@
   },
   {
     "key": "heloisaBio_jp",
-    "value": "[JP Assistant Professor at the Institute for Asian and Oceanian Studies at Kyushu University. Her background is in art and design, however, her interests permeate cultural and social factors, leading to her research into cultural expression in different countries.]"
+    "value": "九州大学アジア・オセアニア研究機構助教。美術とデザインを専門とするが、関心は文化的・社会的要素にも及び、各国における文化表現の研究へと発展している。"
   },
   {
     "key": "kamiokaBio_en",
-    "value": "Lecturer in Russian literature, underground art, and culture at Chuo Gakuin University, having previously lectured on NHK's Advanced Russian programmes."
+    "value": "Professor at the Faculty of Liberal Arts at Chuo Gakuin University. She specializes in Soviet underground culture research and has served as a Russian language instructor for NHK's radio program “Back in the USSR” (Oct. 2024 - Mar. 2025)."
   },
   {
     "key": "kamiokaBio_jp",
-    "value": "[JP Lecturer in Russian literature, underground art, and culture at Chuo Gakuin University, having previously lectured on NHK's Advanced Russian programmes.]"
+    "value": "中央学院大学リベラルアーツ学部教授。ソ連のアンダーグラウンド文化研究を専門とし、NHKラジオ番組「Back in the USSR」（2024年10月〜2025年3月）のロシア語講師を務めた。"
   },
-  { "key": "partnersTitle_en", "value": "Partners" },
-  { "key": "partnersTitle_jp", "value": "[JP Partners]" },
+  { "key": "partnersTitle_en", "value": "Organiser" },
+  { "key": "partnersTitle_jp", "value": "主催者" },
   { "key": "contactTitle_en", "value": "Contact" },
-  { "key": "contactTitle_jp", "value": "[JP Contact]" },
+  { "key": "contactTitle_jp", "value": "お問い合わせ" },
   { "key": "googlemaps_en", "value": "Google Maps" },
-  { "key": "googlemaps_jp", "value": "[JP Google Maps]" },
+  { "key": "googlemaps_jp", "value": "地図" },
   { "key": "minimap_en", "value": "Campus Map" },
-  { "key": "minimap_jp", "value": "[JP Campus Map]" },
-  { "key": "partnerWithUs_en", "value": "Partner With Us" },
-  { "key": "partnerWithUs_jp", "value": "[JP Partner With Us]" },
+  { "key": "minimap_jp", "value": "キャンパスマップ" },
+  { "key": "partnerWithUs_en", "value": "Contribute" },
+  { "key": "partnerWithUs_jp", "value": "ご協力ください" },
   {
     "key": "partnerWithUsDescription_en",
     "value": "Interested in partnering with us or helping promote this event? Get in touch with us!"
   },
   {
     "key": "partnerWithUsDescription_jp",
-    "value": "[JP Interested in partnering with us or helping promote this event? Get in touch with us!]"
+    "value": "このイベントへの協力や共同開催にご関心がありますか？ぜひお気軽にお問い合わせください！"
   }
-  ,
-  {
-    "key": "contactUs_en",
-    "value": "Contact Us"
+  ,{
+    "key": "references_en",
+    "value": "References"
   },
   {
-    "key": "contactUs_jp",
-    "value": "[JP Contact Us]"
+    "key": "references_jp",
+    "value": "参考資料"
   }
   ,
   {
     "key": "contactQAOS_en",
-    "value": "QAOS Website"
+    "value": "Q-AOS Website"
   },
   {
     "key": "contactQAOS_jp",
-    "value": "[JP QAOS Website]"
+    "value": "Q-AOSウェブサイト"
   }
   ,
   {
     "key": "organizingCommittee_en",
-    "value": "Organizing Committee"
+    "value": "Organising Committee"
   },
   {
     "key": "organizingCommittee_jp",
-    "value": "[JP Organizing Committee]"
+    "value": "実行委員会"
   }
   ,
   {
     "key": "charleneAttribution_en",
-    "value": "Charlene's Organization Committee Attributions"
+    "value": "Well-Being with Arts Module Head"
   },
   {
     "key": "charleneAttribution_jp",
-    "value": "[JP Charlene's Organization Committee Attributions]"
+    "value": "芸術による幸福モジュール長"
   }
   ,
   {
@@ -329,7 +336,7 @@
   },
   {
     "key": "heloisaAttribution_jp",
-    "value": "[JP Main Organizer]"
+    "value": "企画"
   }
   ,
   {
@@ -347,6 +354,6 @@
   },
   {
     "key": "mariaAttribution_jp",
-    "value": "[JP Webdesign, Support]"
+    "value": "ウェブデザイン、共催"
   }
 ]
