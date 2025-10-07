@@ -43,19 +43,15 @@ $(document).on("change", "#lang-toggle", updateLanguage);
 
 function updateLanguage() {
   const isJP = $("#lang-toggle").is(":checked");
-  const lang = isJP ? "jp" : "en";
+  const lang = isJP ? "jp" : "en"; 
 
-  if (isJP) {
-    document.body.classList.add("lang-ja");
-  } else {
-    document.body.classList.remove("lang-ja");
-  }
+  document.documentElement.setAttribute("lang", isJP ? "ja" : "en");
 
   $("[class*='i18n-']").each(function () {
     const classes = this.className.split(/\s+/);
     classes.forEach((cls) => {
       if (cls.startsWith("i18n-")) {
-        const keyBase = cls.replace(/^i18n-/, ""); // Remove i18n- prefix
+        const keyBase = cls.replace(/^i18n-/, ""); 
         const key = `${keyBase}_${lang}`;
         if (translations[key]) {
           console.log(
@@ -108,4 +104,3 @@ function initCarousel(carouselSelector) {
   $(window).on("resize", updateCarousel);
   updateCarousel();
 }
-
