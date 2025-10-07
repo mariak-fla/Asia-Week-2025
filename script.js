@@ -43,15 +43,13 @@ $(document).on("change", "#lang-toggle", updateLanguage);
 
 function updateLanguage() {
   const isJP = $("#lang-toggle").is(":checked");
-  const lang = isJP ? "jp" : "en"; 
-
-  document.documentElement.setAttribute("lang", isJP ? "ja" : "en");
+  const lang = isJP ? "jp" : "en";
 
   $("[class*='i18n-']").each(function () {
     const classes = this.className.split(/\s+/);
     classes.forEach((cls) => {
       if (cls.startsWith("i18n-")) {
-        const keyBase = cls.replace(/^i18n-/, ""); 
+        const keyBase = cls.replace(/^i18n-/, ""); // Remove i18n- prefix
         const key = `${keyBase}_${lang}`;
         if (translations[key]) {
           console.log(
