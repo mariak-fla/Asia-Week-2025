@@ -1,5 +1,5 @@
 .lecturer-card-wrapper {
-  padding: 2vh 2rem 0;
+  padding: 2vh 1.2rem 0;
   align-items: center;
 }
 
@@ -7,7 +7,7 @@
 .lecturer-card-wrapper .row {
   display: flex;
   flex-direction: column;
-  gap: 1.2rem;
+  gap: 1rem;
 }
 
 .lecturer-card {
@@ -24,8 +24,8 @@
 
 .lecturer-card-header img {
   border-radius: 50%;
-  width: 4rem;
-  height: 4rem;
+  width: 3.6rem;
+  height: 3.6rem;
   filter: saturate(0);
 }
 

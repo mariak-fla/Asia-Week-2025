@@ -1,9 +1,10 @@
 #guests {
-  gap: 3.2rem;
+  gap: 2.8rem;
 }
 
 .guest-txt {
   gap: 1.6rem;
+  padding: 2rem 2rem 50vh;
 }
 
 .guest-img-wrapper {
@@ -13,7 +14,7 @@
 }
 
 .guest-img-wrapper img {
-  height: 40vh;
+  height: 38vh;
 }
 
 .guest-card .title-wrapper {

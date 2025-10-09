@@ -22,7 +22,7 @@
   --colors-gray-700: #374151;
   --colors-gray-950: #030712;
 
-  --fs-cta: 1.6rem;
+  --fs-cta: 1.5rem;
   --fs-xl: 2.4rem;
   --fs-lg: clamp(1.8rem, calc(1.1647rem + 1.765vw), 2.4rem);
   --fs-md: clamp(1.5rem, calc(1.1824rem + 0.882vw), 1.8rem);
@@ -51,7 +51,7 @@
     --fs-lg: 2rem;
     --fs-md: 1.6rem;
     --fs-sm: 1.4rem;
-    --fs-xs: 1.3rem;
+    --fs-xs: 1.2rem;
   }
 }
 
